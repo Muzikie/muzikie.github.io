@@ -1,0 +1,25 @@
+{
+  "name": "muzikie-website",
+  "version": "1.0.0",
+  "description": "The official website of Muzikie",
+  "keywords": [
+    "music",
+    "streaming",
+    "website"
+  ],
+  "scripts": {
+    "build": "grunt"
+  },
+  "author": "Block Made GmbH",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.2",
+    "jquery": "^3.6.1",
+    "owl.carousel": "^2.3.4"
+  },
+  "devDependencies": {
+    "grunt": "^1.5.3",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-uglify": "^5.2.2"
+  }
+}
