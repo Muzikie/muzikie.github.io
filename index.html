@@ -1,372 +1,1327 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<!-- This site was created in Webflow. https://www.webflow.com -->
+<!-- Last Published: Sun Nov 13 2022 20:58:49 GMT+0000 (Coordinated Universal Time) -->
+<html
+   data-wf-domain="www.sannewijbenga.com"
+   data-wf-page="62d06e0891cd2e8993791ba8"
+   data-wf-site="5c5c83856efacb1a6810474b"
+   lang="en"
+>
+   <head>
+      <meta charset="utf-8" />
+      <title>Decentralized music streaming</title>
 
-<head>
-    <title>Muzikie - Decentralized Music Streaming Platform</title>
+      <meta
+         content="Muzikie is a Decentralized music streaming platform which is fair, transparent, easy to use and democratic. Join music to enjoy music while supporting the future of music."
+         name="description"
+      />
+      <meta
+         content="Muzikie - Decentralized music streaming"
+         property="og:title"
+      />
+      <meta
+         content="Muzikie is a Decentralized music streaming platform which is fair, transparent, easy to use and democratic. Join music to enjoy music while supporting the future of music."
+         property="og:description"
+      />
+      <meta
+         content="Muzikie - Decentralized music streaming"
+         property="twitter:title"
+      />
+      <meta
+         content="Muzikie is a Decentralized music streaming platform which is fair, transparent, easy to use and democratic. Join music to enjoy music while supporting the future of music."
+         property="twitter:description"
+      />
+      <meta property="og:type" content="website" />
+      <meta content="width=device-width, initial-scale=1" name="viewport" />
+      <link href="./dist/style.css" rel="stylesheet" type="text/css" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Muzikie - Decentralized Music Streaming Platform">
-    <meta name="keywords" content="music, streaming, blockchain, listen, singer, dj">
+      <script
+         type="text/javascript"
+         src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ></script>
 
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
+      <link
+         rel="apple-touch-icon"
+         sizes="180x180"
+         href="./assets/images/icon-1.png"
+      />
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="./assets/images/icon-2.png"
+      />
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="16x16"
+         href="./assets/images/icon-3.png"
+      />
+      <link
+         rel="mask-icon"
+         href="./assets/images/icon-4.svg"
+         color="#453248"
+      />
+      <style>
+         .js-accordion-body {
+            display: none;
+         }
+      </style>
+   </head>
 
-    <link href="build/muzikie-website.min.css" rel="stylesheet">
-</head>
-
-<body data-spy="scroll" data-target="#navbar" data-offset="30">
-
-    <!-- Nav Menu -->
-
-    <div class="nav-menu fixed-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <nav class="navbar navbar-dark navbar-expand-lg">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="src/images/logo.svg" alt="logo">
-                            <h4>Muzikie</h4>
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbar">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item"> <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#features">Current status</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#idea">Solutions</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#faq">FAQ</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
-                            </ul>
+   <body data-w-id="62756a8efbf5cdf619c3dba0">
+      <div class="global-styles">
+         <div class="html w-embed"></div>
+      </div>
+      <div class="page-wrapper">
+         <main class="main-wrapper">
+            <!-- hero section with light mode -->
+            <section class="light-mode">
+               <div
+                  id="top"
+                  data-w-id="8f60539d-5c97-d294-c6ca-d88ae781922c"
+                  class="stage"
+               >
+                  <div
+                     data-w-id="dfdbc434-edee-b1bd-fd01-48f1c2e289a8"
+                     class="container is--stage"
+                  >
+                     <div class="container__text is--stage">
+                        <div class="stage__header">
+                           <h1 class="display is-gold">Muzikie</h1>
+                           <h1 class="display">
+                              Decentralized music streaming
+                           </h1>
                         </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <header class="bg-gradient" id="home">
-        <div class="container mt-5">
-            <h1>Decentralized Music Streaming</h1>
-            <p class="tagline">Fair, transparent, and simple</p>
-        </div>
-        <div class="img-holder mt-3"><img src="src/images/listener.png" alt="phone" class="img-fluid"></div>
-    </header>
-
-    <div class="section light-bg" id="features">
-
-
-        <div class="container">
-
-            <div class="section-title">
-                <h3>Current status</h3>
-            </div>
-
-
-            <div class="row problems-section">
-                <div class="col-12 col-lg-6">
-                    <div class="card features">
-                        <div class="card-body">
-                            <div class="media">
-                                <span class="ti-settings gradient-fill ti-3x mr-3"></span>
-                                <div class="media-body">
-                                    <h4 class="card-title">Payment</h4>
-                                    <p class="card-text">Miniscule, delayed, and unfair payment of streaming giants to artists has caused frustration in the music community and killed countless talents.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="card features">
-                        <div class="card-body">
-                            <div class="media">
-                                <span class="ti-lock gradient-fill ti-3x mr-3"></span>
-                                <div class="media-body">
-                                    <h4 class="card-title">Transparency</h4>
-                                    <p class="card-text">Lack of a reliable and transparent approach for calculating the number of streams, downloads, and broadcasts of songs.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="card features">
-                        <div class="card-body">
-                            <div class="media">
-                                <span class="ti-face-smile gradient-fill ti-3x mr-3"></span>
-                                <div class="media-body">
-                                    <h4 class="card-title">Fundraising</h4>
-                                    <p class="card-text">Indie artists struggle to raise capital to bring their ideas to life.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="card features">
-                        <div class="card-body">
-                            <div class="media">
-                                <span class="ti-face-smile gradient-fill ti-3x mr-3"></span>
-                                <div class="media-body">
-                                    <h4 class="card-title">Ownership</h4>
-                                    <p class="card-text">Lack of true ownership of digital assets has left artists with no control over the use & distribution of their artwork.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-    <!-- // end .section -->
-
-    <div class="section">
-        <div class="container">
-            <div class="section-title">
-                <h3>I need a dollar</h3>
-            </div>
-        </div>
-        <div class="container an-example">
-            <div class="artist-photo">
-                <img src="src/images/aloe-blacc.jpg" alt="perspective phone" class="img-fluid">
-            </div>
-            <main>
-                <article>
-                    <h3><b>“</b>The system just ain’t working</h3>
-                    <h3>There must be some mistake</h3>
-                    <h3>When the only way I could get paid</h3>
-                    <h3>Is to change my name to Drake<b>„</b></h3>
-                    <h4>The most streamed single of 2013 on Spotify<br />only earned its authors $4,000 each.</h4>
-                </article>
-            </main>
-        </div>
-
-    </div>
-    <!-- // end .section -->
-
-    <div class="section light-bg" id="idea">
-        <div class="container">
-            <div class="section-title">
-                <h3>Solutions with Muzikie</h3>
-            </div>
-
-            <ul class="nav nav-tabs nav-justified" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#fairness">Fairness</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#transparency">Transparency</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#sponsorship">Sponsorship</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#ownership">Ownership</a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="fairness">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <img src="src/images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
-                        <div>
-                            <h2>Pay fair, and to the right party</h2>
-                            <p class="lead">Music owners, DJs and the development team </p>
-                            <p>Muzikie pays a whopping 80% of the total system profit (of ads and subscriptions). There are additional direct sale approaches to provide artists with flexible income channels.
-                            </p>
-                            <p class="lead">Also, audience in ad-driven plan receive a 10% share of ads profit!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="transparency">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <div>
-                            <h2>Transparent and open to public</h2>
-                            <p class="lead">Thanks to Lisk blockchain platform</p>
-                            <p>Build on Lisk blockchain, streaming count, loyalty right distributions, system income and artists’ share are transparently available to everyone.
-                            </p>
-                        </div>
-                        <img src="src/images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="sponsorship">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <div>
-                            <h2>Play your role in music</h2>
-                            <p class="lead">Support your favorite up and coming artists</p>
-                            <p>Musicians can pitch the idea of their next album to fans, and raise fund. Fans can support their trusted artists in exchange for concert tickets, merchandise, or even a share in the future income.</p>
-                        </div>
-                        <img src="src/images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="ownership">
-                    <div class="d-flex flex-column flex-lg-row">
-                        <img src="src/images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
-                        <div>
-                            <h2>The magic of NFTs</h2>
-                            <p class="lead">Return true ownership to artists</p>
-                            <p>Using Muzikie, artists now own their songs, albums, and playlists with its entire history. They can freely sell or distribute loyalty right of their songs.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-    <!-- // end .section -->
-
-
-    <div class="section light-bg">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 d-flex align-items-center">
-                    <ul class="list-unstyled ui-steps">
-                        <li class="media">
-                            <div class="circle-icon mr-4">1</div>
-                            <div class="media-body">
-                                <h5>Create an Account</h5>
-                                <p>Create an account for free, or use your Lisk account if you already have one</p>
-                            </div>
-                        </li>
-                        <li class="media my-4">
-                            <div class="circle-icon mr-4">2</div>
-                            <div class="media-body">
-                                <h5>Start a 2 month trial</h5>
-                                <p>Muzikie offers a 2 month trial + 1 more month if you give your favorite artist's referal code.</p>
-                            </div>
-                        </li>
-                        <li class="media">
-                            <div class="circle-icon mr-4">3</div>
-                            <div class="media-body">
-                                <h5>Enjoy your music</h5>
-                                <p>Stream high quality music on mobile and desktop. Support your artist while having fun!</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <img src="src/images/girl.png" alt="iphone" class="img-fluid">
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-    <!-- // end .section -->
-
-
-    <!-- <div class="section">
-        <div class="container">
-            <div class="section-title">
-                <small>TESTIMONIALS</small>
-                <h3>What artists say</h3>
-            </div>
-
-            <div class="testimonials owl-carousel">
-                <div class="testimonials-single">
-                    <img src="src/images/shirin-david.jpg" alt="client" class="client-img">
-                    <blockquote class="blockquote">It's heartwarming to see the technology is used to resolve one of the most challenging issues of the music industry. This seems to be the right choice.</blockquote>
-                    <h5 class="mt-4 mb-2">Shirin David</h5>
-                    <p class="text-primary">Germany</p>
-                </div>
-                <div class="testimonials-single">
-                    <img src="src/images/heydoo.png" alt="client" class="client-img">
-                    <blockquote class="blockquote">Musicians who have smaller audience barely make a living with the current streaming services. A fair pay can help artist rely on their creative talent for a living, and put all their time and effort to pursue a career in music.</blockquote>
-                    <h5 class="mt-4 mb-2">Heydoo</h5>
-                    <p class="text-primary">United Kingdom</p>
-                </div>
-                <div class="testimonials-single">
-                    <img src="src/images/sogand.jpg" alt="client" class="client-img">
-                    <blockquote class="blockquote">This is a next step to return the control of the music to musicians. I'm positive artists will join it, and fans will be happy to support their favorite musicians too.</blockquote>
-                    <h5 class="mt-4 mb-2">Sogand</h5>
-                    <p class="text-primary">Germany</p>
-                </div>
-            </div>
-
-        </div>
-
-    </div> -->
-    <!-- // end .section -->
-
-
-    <div class="section" id="faq">
-        <div class="container">
-            <div class="section-title">
-                <h3>Frequently Asked Questions</h3>
-            </div>
-
-            <div class="row pt-4">
-                <div class="col-md-6">
-                    <h4 class="mb-3">Can I try for free?</h4>
-                    <p class="light-font mb-5">Absolutely! Muzikie gives everyone a free subscription for 2 month, in exchange for 2 simple social media shares!</p>
-                    <h4 class="mb-3">What payment methods do you accept?</h4>
-                    <p class="light-font mb-5">Payments in Muzikie are all based on MZK tokens. But don't worry, they're easy to buy!</p>
-                </div>
-                <div class="col-md-6">
-                    <h4 class="mb-3">Who else can make money?</h4>
-                    <p class="light-font mb-5">If you are a music curator, a DJ, or you just have great playlists, you can monetize them directly. Also, users who adopt to the ad-driven plan, receive a 10% share of ads profit.</p>
-                    <h4 class="mb-3">How are artists paid?</h4>
-                    <p class="light-font mb-5">Artists receive an 80% share of the total profit, available to claim at the end of  every month, even if it's a penny!</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- // end .section -->
-
-
-
-
-
-    <div class="light-bg py-5" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 text-center text-lg-left">
-                    <p class="mb-2"> <span class="ti-location-pin mr-2"></span>Akazienstr 3A, 10823 Berlin, Germany</p>
-                    <div class=" d-block d-sm-inline-block">
-                        <p class="mb-2">
-                            <span class="ti-email mr-2"></span> <a class="mr-4" href="mailto:info@block-made.com">info@block-made.com</a>
+                        <p class="is--big is--stage">
+                           Looking for music streaming platform where music is not treated as a commodity?
+                           Support your favorite musicians by joining a <strong>fair, transparent and intuitive</strong>
+                           Platform with a futuristic economy.
                         </p>
-                    </div>
+                        <div type="button" id="button" class="stage__buttons">
+                           <a
+                              onclick="openChat()"
+                              data-w-id="17999620-569b-3c1a-3a6b-298bb94e11fa"
+                              style="opacity: 1"
+                              href="#"
+                              class="button open-lightbox w-inline-block"
+                           >
+                              <div class="button__label">Coming soon</div>
+                              <div class="button__rollover-circle-container">
+                                 <div
+                                    data-w-id="8ce3384f-6fb6-0a72-9deb-5d6ffd19b91f"
+                                    class="button__rollover-circle"
+                                 ></div>
+                              </div>
+                           </a>
+                           <a
+                              href="#problem"
+                              data-w-id="1633f9f2-7fbb-70ac-be35-40968c24c4c5"
+                              class="button is--secundary is--find-out-more w-inline-block"
+                           >
+                              <div>Find out more</div>
+                              <div class="find-out-more-arrow__container">
+                                 <div
+                                    data-w-id="9e02d859-a354-236f-2177-27495bece912"
+                                    class="icon-24 is--down w-embed"
+                                 >
+                                    <img
+                                       src="./assets/svgs/scrollDown.svg"
+                                       class="opacity-50"
+                                       alt=""
+                                    />
+                                 </div>
+                                 <div
+                                    data-w-id="2c977915-169e-c694-cbba-2baa4d138d68"
+                                    class="icon-24 is--down w-embed"
+                                 >
+                                    <img
+                                       src="./assets/svgs/scrollDown.svg"
+                                       class="opacity-50"
+                                       alt=""
+                                    />
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-- end of hero section  -->
 
-                </div>
-                <div class="col-lg-6">
-                    <div class="social-icons">
-                        <a href="https://instagram.com/muzikieHQ"><span class="ti-instagram"></span></a>
-                        <a href="https://twitter.com/muzikieHQ"><span class="ti-twitter-alt"></span></a>
-                        <a href="https://github.com/muzikie"><span class="ti-github"></span></a>
-                        <a href="https://discord.com/invite/NeGWZ3JF"><span class="ti-support"></span></a>
-                    </div>
-                </div>
+            <div
+               id="el"
+               data-w-id="433075d8-9554-25cf-70fa-0ebbe1f4ae46"
+               class="transition is--first"
+            ></div>
+            <div class="dark-mode">
+               <!-- Whai i do section -->
+               <section
+                  id="problem"
+                  data-w-id="70e796e1-dd27-fdda-8d23-229a994ded7c"
+                  class="what-i-do"
+               >
+                  <div id="el" class="container reveal">
+                     <div class="container__text">
+                        <div class="container__16">
+                           <div class="change-header">
+                              <h2 class="h2">Music distribution</h2>
+                              <div class="change-header__overflow">
+                                 <div
+                                    data-w-id="08ff3134-8b56-130e-1e8a-2fe7c8d0f1a3"
+                                    class="change-header__move"
+                                 >
+                                    <h2 class="h2 is--gold">
+                                       is not fair
+                                    </h2>
+                                    <h2 class="h2 is--gold">
+                                       is not transparent
+                                    </h2>
+                                    <h2 class="h2 is--gold">
+                                       is legacy and outdated
+                                    </h2>
+                                    <h2 class="h2 is--gold">
+                                       could be better
+                                    </h2>
+                                    <h2 class="h2 is--gold">
+                                       should be democratic
+                                    </h2>
+                                 </div>
+                              </div>
+                           </div>
+                           <p class="is--broad is--darkmode">
+                              While music streaming platform such as Apple Music
+                              and spotify have made music significantly more
+                              accessible, thay have done so by putting a dent in
+                              the income of artists.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="container__32">
+                        <div class="container__text">
+                           <h3 class="h4">How it is now</h3>
+                        </div>
+                        <div class="container__broad">
+                           <div class="accordion js-accordion">
+                              <div
+                                 class="accordion-item js-accordion-item is--darkmode"
+                              >
+                                 <div
+                                    class="accordion-header js-accordion-header"
+                                 >
+                                    <h4 class="h6">payment</h4>
+                                    <div class="js-accordion-icon w-embed">
+                                       <img
+                                          src="./assets/svgs/dropdowan.svg"
+                                          class="filter"
+                                          alt="dropdown"
+                                       />
+                                    </div>
+                                 </div>
+                                 <div
+                                    class="accordion-body js-accordion-body is--services"
+                                 >
+                                    <div
+                                       class="accordion-body__service is--product-discovery"
+                                    >
+                                       <p
+                                          class="is--small is--accordion is--darkmode"
+                                       >
+                                          Miniscule, delayed, and unfair payment
+                                          of streaming giants to artists has
+
+                                          <strong class="bold-white">
+                                             caused frustration in the music
+                                             community
+                                          </strong>
+                                          and killed countless talents.
+                                       </p>
+                                       <div
+                                          class="container-service-illustration"
+                                       >
+                                          <div
+                                             class="container-service-illustration__mask"
+                                          >
+                                             <img
+                                                src="https://uploads-ssl.webflow.com/5c5c83856efacb1a6810474b/62bdc1ef9cccfb907e54e58e_product-discovery-illustration.svg"
+                                                loading="eager"
+                                                alt="Product discovery illustration"
+                                                class="service-illustration"
+                                             />
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div
+                                 class="accordion-item js-accordion-item is--darkmode"
+                              >
+                                 <div
+                                    class="accordion-header js-accordion-header"
+                                 >
+                                    <h4 class="h6">Transparency</h4>
+                                    <div class="js-accordion-icon w-embed">
+                                       <img
+                                          src="./assets/svgs/dropdowan.svg"
+                                          class="filter"
+                                          alt="dropdown"
+                                       />
+                                    </div>
+                                 </div>
+                                 <div
+                                    class="accordion-body js-accordion-body is--services"
+                                 >
+                                    <div
+                                       class="accordion-body__service is--product-design"
+                                    >
+                                       <p
+                                          class="is--small is--accordion is--darkmode"
+                                       >
+                                          Lack of a reliable and transparent
+                                          approach for
+
+                                          <strong class="bold-white">
+                                             calculating the number
+                                          </strong>
+                                          of streams, downloads, and broadcasts
+                                          of songs.
+                                       </p>
+                                       <div
+                                          class="container-service-illustration"
+                                       >
+                                          <div
+                                             class="container-service-illustration__mask"
+                                          >
+                                             <img
+                                                src="https://uploads-ssl.webflow.com/5c5c83856efacb1a6810474b/62bdc2099664fc8846ca289c_product-design-illustration.svg"
+                                                loading="eager"
+                                                alt="Product design illustration"
+                                                class="service-illustration"
+                                             />
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div
+                                 class="accordion-item js-accordion-item is--darkmode"
+                              >
+                                 <div
+                                    class="accordion-header js-accordion-header"
+                                 >
+                                    <h4 class="h6">Fundraising</h4>
+                                    <div class="js-accordion-icon w-embed">
+                                       <img
+                                          src="./assets/svgs/dropdowan.svg"
+                                          class="filter"
+                                          alt="dropdown"
+                                       />
+                                    </div>
+                                 </div>
+                                 <div
+                                    class="accordion-body js-accordion-body is--services"
+                                 >
+                                    <div class="accordion-body__service">
+                                       <p
+                                          class="is--small is--accordion is--darkmode"
+                                       >
+                                          Indie artists struggle to raise
+                                          capital to
+                                          <strong class="bold-white">
+                                             bring their ideas to life
+                                          </strong>
+                                          .
+                                       </p>
+                                       <div
+                                          class="container-service-illustration"
+                                       >
+                                          <div
+                                             class="container-service-illustration__mask"
+                                          >
+                                             <img
+                                                src="https://uploads-ssl.webflow.com/5c5c83856efacb1a6810474b/62bdef70b6fac0348c62a276_product-leadership-illustration.svg"
+                                                loading="eager"
+                                                alt="Product leadership illustration"
+                                                class="service-illustration"
+                                             />
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div
+                                 class="accordion-item js-accordion-item is--darkmode"
+                              >
+                                 <div
+                                    class="accordion-header js-accordion-header"
+                                 >
+                                    <h4 class="h6">Ownership</h4>
+                                    <div class="js-accordion-icon w-embed">
+                                       <img
+                                          src="./assets/svgs/dropdowan.svg"
+                                          class="filter"
+                                          alt="dropdown"
+                                       />
+                                    </div>
+                                 </div>
+                                 <div
+                                    class="accordion-body js-accordion-body is--services"
+                                 >
+                                    <div class="accordion-body__service">
+                                       <p
+                                          class="is--small is--accordion is--darkmode"
+                                       >
+                                          <strong class="bold-white">
+                                             Lack of true ownership of digital
+                                             assets
+                                          </strong>
+                                          has left artists with no control over
+                                          the use & distribution of their
+                                          artwork.
+                                       </p>
+                                       <div
+                                          class="container-service-illustration"
+                                       >
+                                          <div
+                                             class="container-service-illustration__mask"
+                                          >
+                                             <img
+                                                src="https://uploads-ssl.webflow.com/5c5c83856efacb1a6810474b/62bdef70b6fac0348c62a276_product-leadership-illustration.svg"
+                                                loading="eager"
+                                                alt="Product leadership illustration"
+                                                class="service-illustration"
+                                             />
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+
+               <!-- End of what i do section  -->
+            </div>
+            <div
+               id="example"
+               data-w-id="20e35c78-c07e-3570-fd12-5f2de1b48017"
+               class="about dark-mode"
+            >
+               <div
+                  data-w-id="3671f1f1-fdae-091c-9963-152b46d77fc5"
+                  class="container"
+               >
+                  <div class="container__text is--about">
+                     <div class="container__24 is--about">
+                        <div class="container__16">
+                           <h2 class="h2">I Need a Dollar</h2>
+                           <p class="is--grey">
+                              The most streamed single of 2013 on Spotify earned
+                              its authors
+                              <strong class="bold-white">$4,000 each.</strong>
+                           </p>
+                           <br />
+                           <p class="is--grey">
+                              <strong class="bold-white">“</strong>
+                              <strong class="bold-white">
+                                 The System just ain't working
+                              </strong><br />
+                              <strong class="bold-white">&nbsp;&nbsp;</strong>
+                              <strong class="bold-white">
+                                 There must be some mistake
+                              </strong><br />
+                              <strong class="bold-white">&nbsp;&nbsp;</strong>
+                              <strong class="bold-white">
+                                 When the only way i could get paid
+                              </strong><br />
+                              <strong class="bold-white">&nbsp;&nbsp;</strong>
+                              <strong class="bold-white">
+                                 Is to change my name to Drake
+                              </strong>
+                              <strong class="bold-white">„</strong>
+                           </p>
+                           <br />
+                           <p class="is--grey">
+                              Aloe Blacc is not the only artists who has taken their music off Spotify. Taylor Swift has also removed her music from the platform. The reason is simple: Spotify pays artists a fraction of a penny per stream. The average artist earns less than $1,000 per year from Spotify.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="portrait-container">
+                        <div
+                           data-w-id="5e3b8d39-5208-b1de-f974-f4928e464b9c"
+                           class="portrait is--cover"
+                        ></div>
+                        <img
+                           src="./assets/images/aloe-blacc.jpg"
+                           loading="eager"
+                           width="630"
+                           sizes="(max-width: 479px) 393px, (max-width: 991px) 300px, 100vw"
+                           alt="Photo of Sanne Wijbenga"
+                           class="portrait is--mobile"
+                        />
+                        <img
+                           src="./assets/images/aloe-blacc.jpg"
+                           loading="eager"
+                           width="630"
+                           sizes="(max-width: 991px) 30vw, 20vw"
+                           alt="Photo of Sanne Wijbenga"
+                           class="portrait"
+                        />
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- </div> -->
+            <div
+               data-w-id="b69d2f9d-fa3d-88cf-ff2f-592dc30092b1"
+               class="transition"
+            ></div>
+
+            <!-- start working to gether -->
+            <div
+               data-w-id="836b852e-44b2-be8c-8b05-af83c78a31dc"
+               class="light-mode"
+            >
+               <div id="solution" class="process">
+                  <div class="container">
+                     <div class="container__text">
+                        <div class="container__16">
+                           <h2 class="h2">Muzikie solutions</h2>
+                           <div class="div-block">
+                              <div class="container__16">
+                                 <p>
+                                    Muzikie offers an
+                                    <strong>
+                                       auditable, democratic and futuristic
+                                    </strong>
+                                    solution to issues explained. Benefiting from the
+                                    <strong>blockchain technology</strong>
+                                    Muzikie is a platform for young and
+                                    promising artists to grow and shine to the
+                                    fullest of their potential.
+                                 </p>
+                              </div>
+                              <img
+                                 src="https://uploads-ssl.webflow.com/5c5c83856efacb1a6810474b/62ceae7c570f8c04351fcec4_working-together-illustration.svg"
+                                 loading="eager"
+                                 alt=""
+                                 class="process__illustration"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                     <div class="container__32">
+                        <!-- <div class="container__text">
+                           <h3 class="h4">Where to start</h3>
+                        </div> -->
+                        <div class="container__broad">
+                           <div class="accordion js-accordion">
+                              <div
+                                 id="p02"
+                                 type="button"
+                                 class="accordion-item js-accordion-item"
+                              >
+                                 <div
+                                    class="accordion-header js-accordion-header"
+                                 >
+                                    <div class="accordion-header__with-label">
+                                       <h4 class="h6">Fairness</h4>
+                                       <!-- <div class="tag is--recommended">
+                                          Recommended
+                                       </div> -->
+                                    </div>
+                                    <div class="js-accordion-icon w-embed">
+                                       <img
+                                          src="./assets/svgs/dropdowan.svg"
+                                          alt=""
+                                       />
+                                    </div>
+                                 </div>
+                                 <div
+                                    id="p01"
+                                    class="accordion-body js-accordion-body"
+                                 >
+                                    <div
+                                       class="accordion-body__example-project"
+                                    >
+                                       <p class="is--small is--accordion">
+                                          Muzikie
+                                          <strong>
+                                             pays a whopping 80% of the total
+                                             system profit
+                                          </strong>
+                                          (of ads and subscriptions). There are
+                                          additional direct sale approaches to
+                                          provide artists with flexible income
+                                          channels.
+                                          <br />
+
+                                          Also, audience in ad-driven plan
+                                          receive a 10% share of ads profit!
+                                       </p>
+                                       <div class="container-great-for">
+                                          <h5 class="h7">Purchase</h5>
+                                          <ul
+                                             role="list"
+                                             class="great-for__list"
+                                          >
+                                             <li>
+                                                <span
+                                                   class="great-for__list-item-text"
+                                                >
+                                                   Artist may offer different licenses for downloading
+                                                   their music and videos and using them in other projects
+                                                </span>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div
+                                 id="p02"
+                                 class="accordion-item js-accordion-item"
+                              >
+                                 <div
+                                    class="accordion-header js-accordion-header"
+                                 >
+                                    <h4 class="h6">Transparency</h4>
+                                    <div class="js-accordion-icon w-embed">
+                                       <img
+                                          src="./assets/svgs/dropdowan.svg"
+                                          alt=""
+                                       />
+                                    </div>
+                                 </div>
+                                 <div class="accordion-body js-accordion-body">
+                                    <div
+                                       id="p01"
+                                       class="accordion-body__example-project"
+                                    >
+                                       <p class="is--small is--accordion">
+                                          Build on Lisk blockchain, streaming
+                                          count, loyalty right distributions,
+                                          system income and artists’ share are
+                                          transparently available to everyone.
+                                       </p>
+                                       <div class="container-great-for">
+                                          <h5 class="h7">Shared loyalties:</h5>
+                                          <ul
+                                             role="list"
+                                             class="great-for__list"
+                                          >
+                                             <li>
+                                                <span
+                                                   class="great-for__list-item-text"
+                                                >
+                                                   Users may split shares of their loyalty rights right inside the app
+                                                </span>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="accordion-item js-accordion-item">
+                                 <div
+                                    class="accordion-header js-accordion-header"
+                                 >
+                                    <h4 class="h6">Sponsership</h4>
+                                    <div class="js-accordion-icon w-embed">
+                                       <img
+                                          src="./assets/svgs/dropdowan.svg"
+                                          alt=""
+                                       />
+                                    </div>
+                                 </div>
+                                 <div class="accordion-body js-accordion-body">
+                                    <div
+                                       class="accordion-body__example-project"
+                                    >
+                                       <p class="is--small is--accordion">
+                                          Musicians can pitch the idea of their
+                                          next album to fans, and raise fund.
+                                          Fans can support their trusted artists
+                                          in exchange for concert tickets,
+                                          merchandise, or even a share in the
+                                          future income.
+                                       </p>
+                                       <div class="container-great-for">
+                                          <h5 class="h7">
+                                             Play your role in music
+                                          </h5>
+                                          <ul
+                                             role="list"
+                                             class="great-for__list"
+                                          >
+                                             <li>
+                                                <span
+                                                   class="great-for__list-item-text"
+                                                >
+                                                   Support your favorite up and
+                                                   coming artists
+                                                </span>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="accordion-item js-accordion-item">
+                                 <div
+                                    class="accordion-header js-accordion-header"
+                                 >
+                                    <h4 class="h6">Ownership</h4>
+                                    <div class="js-accordion-icon w-embed">
+                                       <img
+                                          src="./assets/svgs/dropdowan.svg"
+                                          alt=""
+                                       />
+                                    </div>
+                                 </div>
+                                 <div class="accordion-body js-accordion-body">
+                                    <div
+                                       class="accordion-body__example-project"
+                                    >
+                                       <p class="is--small is--accordion">
+                                          Using Muzikie, artists now own their
+                                          songs, albums, and playlists with its
+                                          entire history. They can freely sell
+                                          or distribute loyalty right of their
+                                          songs.
+                                       </p>
+                                       <div class="container-great-for">
+                                          <h5 class="h7">Blockchain and NFTs:</h5>
+                                          <ul
+                                             role="list"
+                                             class="great-for__list"
+                                          >
+                                             <span
+                                                class="great-for__list-item-text"
+                                             >
+                                                Muzikie is a democratic platform where artists can make strategic decisions about future of the music industry
+                                             </span>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- // Faq  -->
+                     <div class="container__32 mt-5" id="faq">
+                        <div class="container__text">
+                           <h3 class="h4">Frequently Asked Questions</h3>
+                        </div>
+                        <div class="container__broad is--testimonial">
+                           <div class="testimonial__column">
+                              <div
+                                 class="container__text is--testimonial hidden"
+                              >
+                                 <!-- <p class="is--testimonial is--quote">“</p> -->
+                                 <h5 class="text-purple">
+                                    Can I try for free?
+                                 </h5>
+
+                                 <p class="is--testimonial">
+                                    Absolutely! Muzikie gives everyone a free
+                                    subscription for 2 month, in exchange for 2
+                                    simple social media shares!
+                                 </p>
+
+                                 <div style="width: 10px"></div>
+                              </div>
+                              <div
+                                 class="container__text is--testimonial hidden"
+                              >
+                                 <!-- <p class="is--testimonial is--quote">“</p> -->
+                                 <h5 class="text-purple">
+                                    What payment methods do you accept?
+                                 </h5>
+
+                                 <p class="is--testimonial">
+                                    Payments in Muzikie are all based on MZK
+                                    tokens. But don't worry, they're easy to
+                                    buy! receive a 10% share of ads profit
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="testimonial__column">
+                              <div
+                                 class="container__text is--testimonial hidden"
+                              >
+                                 <!-- <p class="is--testimonial is--quote">“</p> -->
+                                 <h5 class="text-purple">
+                                    Who else can make money?
+                                 </h5>
+
+                                 <p class="is--testimonial">
+                                    If you are a music curator, a DJ, or you
+                                    just have great playlists, you can monetize
+                                    them directly. Also, users who adopt to the
+                                    ad-driven plan, receive a 10% share of ads
+                                    profit.
+                                 </p>
+                              </div>
+                              <div
+                                 class="container__text is--testimonial hidden"
+                              >
+                                 <!-- <p class="is--testimonial is--quote">“</p> -->
+                                 <h5 class="text-purple">
+                                    How are artists paid?
+                                 </h5>
+
+                                 <p class="is--testimonial">
+                                    Artists receive an 80% share of the total
+                                    profit, available to claim at the end of
+                                    every month, even if it's a penny!
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- End of what client say about me -->
+
+                     <!-- end of faq -->
+                     <div class="container__text is--contact">
+                        <a
+                           id="contactButtonBottom"
+                           onclick="openChat()"
+                           style="opacity: 1"
+                           href="#"
+                           class="button open-lightbox w-inline-block"
+                        >
+                           <div class="button__label">Soon</div>
+                           <div class="button__rollover-circle-container">
+                              <div
+                                 data-w-id="a62154b0-5450-56d2-9479-4ea74e0d7027"
+                                 class="button__rollover-circle"
+                              ></div>
+                           </div>
+                        </a>
+                        <div class="available-label__wrapper">
+                           <div class="available-label__bubble"></div>
+                           <div class="contact__label">
+                              Available on testnet on
+                              <strong class="contact__available-text">
+                                 January 2023
+                              </strong>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div
+                  data-w-id="1637349c-5ca3-a5e3-43f6-6f393adebdae"
+                  class="footer"
+               >
+                  <div class="container">
+                     <div class="container__text is--footer">
+                        <div class="footer__text">© Block Made GmbH 2022</div>
+                        <a href="#" class="menu__link is--imprint">Imprint</a>
+                        <div class="menu__links is--socials">
+                           <a
+                              href="https://twitter.com/muzikieHQ"
+                              target="_blank"
+                              class="social-icon w-inline-block"
+                           >
+                              <div class="html-embed w-embed">
+                                 <img src="./assets/svgs/twitter.svg" alt="" />
+                              </div>
+                              <div class="is--alt-text">Twitter</div>
+                           </a>
+                           <a
+                              href="https://github.com/muzikie"
+                              target="_blank"
+                              class="social-icon w-inline-block"
+                           >
+                              <div class="html-embed w-embed">
+                                 <img src="./assets/svgs/github.svg" alt="" />
+                              </div>
+                              <div class="is--alt-text">Github</div>
+                           </a>
+                           <a
+                              href="https://t.me/muzikieHQ"
+                              target="_blank"
+                              class="social-icon w-inline-block"
+                           >
+                              <div class="html-embed w-embed">
+                                 <img src="./assets/svgs/telegram.svg" alt="" />
+                              </div>
+                              <div class="is--alt-text">Telegram</div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
 
-        </div>
+            <!-- </div> -->
 
-    </div>
-    <!-- // end .section -->
-    <footer class="my-5 text-center">
-        <!-- Copyright removal is not prohibited! -->
-        <p class="mb-2"><small>COPYRIGHT © 2022. ALL RIGHTS RESERVED FOR <a href="https://block-made.com">BLOCK MADE GMBH</a></small></p>
+            <!-- end of working to gether -->
+         </main>
+      </div>
+      <div
+         data-w-id="2c85b5f9-d9af-bc02-3baf-b35bc0480aa4"
+         class="menu__mobile__expanded"
+      >
+         <div
+            data-w-id="5c76b5e2-07cf-9663-d33d-2b7a2e09090e"
+            class="glasspane is--mobile-expanded"
+         ></div>
+         <div
+            data-w-id="60c5a7ca-f9ee-0d6c-a17b-d5e81ecedde6"
+            class="mobile-expanded__background is--under-glasspane"
+         ></div>
+         <div class="menu__mobile-expanded_flyout">
+            <div
+               data-w-id="a84a7d34-c208-8c7f-4b93-c752728ce51f"
+               class="navigation is--mobile-expanded"
+            >
+               <div
+                  data-w-id="a84a7d34-c208-8c7f-4b93-c752728ce527"
+                  class="navigation__line force--white"
+               ></div>
+               <div class="menu__mobile">
+                  <div class="menu__links">
+                     <a
+                        data-w-id="49ee12c4-8612-3923-2fcf-2bf881b82cfa"
+                        href="#"
+                        class="menu__link-mobil-close w-inline-block"
+                     >
+                        <div class="menu__icon is--close">
+                           <div class="menu-icon__line-1"></div>
+                           <div class="menu-icon__line-2"></div>
+                        </div>
+                        <div class="is--alt-text">Close</div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div
+               data-w-id="9248a15e-3154-4a2b-e045-a6c41f9ae83b"
+               class="menu__links is--socials is--mobile-expanded"
+            >
+               <a
+                  href="https://twitter.com/sannewijbenga"
+                  target="_blank"
+                  class="social-icon is--mobile-expanded w-inline-block"
+               >
+                  <div class="html-embed w-embed">
+                     <img src="./assets/svgs/twitter.svg" alt="" />
+                  </div>
+                  <div class="is--alt-text">Twitter</div>
+               </a>
+               <a
+                  href="https://www.linkedin.com/in/sannewijbenga/"
+                  target="_blank"
+                  class="social-icon is--mobile-expanded w-inline-block"
+               >
+                  <div class="html-embed w-embed">
+                     <img src="./assets/svgs/linkedIn.svg" alt="" />
+                  </div>
+                  <div class="is--alt-text">LinkedIn</div>
+               </a>
+            </div>
+            <div
+               data-w-id="7e0b8af6-7f69-c6d8-12c0-8342a2ae12bc"
+               class="mobile-links__container"
+            >
+               <div class="mobile-links">
+                  <div class="mobile-links__column">
+                     <a
+                        href="#problem"
+                        data-w-id="a19da47e-a291-15c5-00fb-f5bf090d8490"
+                        class="is--mobile-link w-inline-block"
+                     >
+                        <div
+                           class="icon-24 is--down is--mobile-expanded w-embed"
+                        >
+                           <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 fill-rule="evenodd"
+                                 clip-rule="evenodd"
+                                 d="M11.106 2.55191L12 0.763916L12.8939 2.55177L12.8944 2.55277L12.901 2.56571C12.9071 2.57743 12.9169 2.59639 12.9305 2.62211C12.9577 2.67356 13 2.75196 13.0571 2.85347C13.1714 3.05663 13.3445 3.3515 13.5744 3.70746C14.0354 4.4213 14.7182 5.37058 15.6045 6.31604C17.3955 8.22642 19.8995 9.99998 23 9.99998V12C19.1005 12 16.1045 9.77354 14.1455 7.68393C13.72 7.23007 13.3378 6.77692 13 6.34527V24H11V6.34527C10.6622 6.77692 10.28 7.23007 9.85454 7.68393C7.89552 9.77354 4.89951 12 1 12V9.99998C4.10049 9.99998 6.60448 8.22642 8.39546 6.31604C9.28183 5.37058 9.96457 4.4213 10.4256 3.70746C10.6555 3.3515 10.8286 3.05663 10.9429 2.85347C11 2.75196 11.0423 2.67356 11.0695 2.62211C11.0831 2.59639 11.0929 2.57743 11.099 2.56571L11.106 2.55191Z"
+                                 fill="CurrentColor"
+                              />
+                           </svg>
+                        </div>
+                        <div class="h2 is--menu">What I do</div>
+                     </a>
+                     <a
+                        href="#example"
+                        data-w-id="25c718f8-c7c8-c30f-8615-a1c5b1a9587e"
+                        class="is--mobile-link w-inline-block"
+                     >
+                        <div
+                           class="icon-24 is--down is--mobile-expanded w-embed"
+                        >
+                           <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 fill-rule="evenodd"
+                                 clip-rule="evenodd"
+                                 d="M11.106 2.55191L12 0.763916L12.8939 2.55177L12.8944 2.55277L12.901 2.56571C12.9071 2.57743 12.9169 2.59639 12.9305 2.62211C12.9577 2.67356 13 2.75196 13.0571 2.85347C13.1714 3.05663 13.3445 3.3515 13.5744 3.70746C14.0354 4.4213 14.7182 5.37058 15.6045 6.31604C17.3955 8.22642 19.8995 9.99998 23 9.99998V12C19.1005 12 16.1045 9.77354 14.1455 7.68393C13.72 7.23007 13.3378 6.77692 13 6.34527V24H11V6.34527C10.6622 6.77692 10.28 7.23007 9.85454 7.68393C7.89552 9.77354 4.89951 12 1 12V9.99998C4.10049 9.99998 6.60448 8.22642 8.39546 6.31604C9.28183 5.37058 9.96457 4.4213 10.4256 3.70746C10.6555 3.3515 10.8286 3.05663 10.9429 2.85347C11 2.75196 11.0423 2.67356 11.0695 2.62211C11.0831 2.59639 11.0929 2.57743 11.099 2.56571L11.106 2.55191Z"
+                                 fill="CurrentColor"
+                              />
+                           </svg>
+                        </div>
+                        <div class="h2 is--menu">Work</div>
+                     </a>
+                  </div>
+                  <div class="mobile-links__column">
+                     <a
+                        href="#example"
+                        data-w-id="837dfd46-4976-45bb-6c74-9070f5dc0018"
+                        class="is--mobile-link w-inline-block"
+                     >
+                        <div
+                           class="icon-24 is--down is--mobile-expanded w-embed"
+                        >
+                           <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 fill-rule="evenodd"
+                                 clip-rule="evenodd"
+                                 d="M11.106 2.55191L12 0.763916L12.8939 2.55177L12.8944 2.55277L12.901 2.56571C12.9071 2.57743 12.9169 2.59639 12.9305 2.62211C12.9577 2.67356 13 2.75196 13.0571 2.85347C13.1714 3.05663 13.3445 3.3515 13.5744 3.70746C14.0354 4.4213 14.7182 5.37058 15.6045 6.31604C17.3955 8.22642 19.8995 9.99998 23 9.99998V12C19.1005 12 16.1045 9.77354 14.1455 7.68393C13.72 7.23007 13.3378 6.77692 13 6.34527V24H11V6.34527C10.6622 6.77692 10.28 7.23007 9.85454 7.68393C7.89552 9.77354 4.89951 12 1 12V9.99998C4.10049 9.99998 6.60448 8.22642 8.39546 6.31604C9.28183 5.37058 9.96457 4.4213 10.4256 3.70746C10.6555 3.3515 10.8286 3.05663 10.9429 2.85347C11 2.75196 11.0423 2.67356 11.0695 2.62211C11.0831 2.59639 11.0929 2.57743 11.099 2.56571L11.106 2.55191Z"
+                                 fill="CurrentColor"
+                              />
+                           </svg>
+                        </div>
+                        <div class="h2 is--menu">About</div>
+                     </a>
+                     <a
+                        href="#faq"
+                        data-w-id="c23bdf74-79e3-bf64-3cef-2bc97665322b"
+                        class="is--mobile-link w-inline-block"
+                     >
+                        <div
+                           class="icon-24 is--down is--mobile-expanded w-embed"
+                        >
+                           <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 fill-rule="evenodd"
+                                 clip-rule="evenodd"
+                                 d="M11.106 2.55191L12 0.763916L12.8939 2.55177L12.8944 2.55277L12.901 2.56571C12.9071 2.57743 12.9169 2.59639 12.9305 2.62211C12.9577 2.67356 13 2.75196 13.0571 2.85347C13.1714 3.05663 13.3445 3.3515 13.5744 3.70746C14.0354 4.4213 14.7182 5.37058 15.6045 6.31604C17.3955 8.22642 19.8995 9.99998 23 9.99998V12C19.1005 12 16.1045 9.77354 14.1455 7.68393C13.72 7.23007 13.3378 6.77692 13 6.34527V24H11V6.34527C10.6622 6.77692 10.28 7.23007 9.85454 7.68393C7.89552 9.77354 4.89951 12 1 12V9.99998C4.10049 9.99998 6.60448 8.22642 8.39546 6.31604C9.28183 5.37058 9.96457 4.4213 10.4256 3.70746C10.6555 3.3515 10.8286 3.05663 10.9429 2.85347C11 2.75196 11.0423 2.67356 11.0695 2.62211C11.0831 2.59639 11.0929 2.57743 11.099 2.56571L11.106 2.55191Z"
+                                 fill="CurrentColor"
+                              />
+                           </svg>
+                        </div>
+                        <div class="h2 is--menu">Process</div>
+                     </a>
+                  </div>
+               </div>
+               <a
+                  onclick="openChat()"
+                  data-w-id="e09d3e79-ffeb-36df-f54e-641462a36266"
+                  href="#"
+                  class="button is--diapositive open-lightbox w-inline-block"
+               >
+                  <div class="">Coming soon</div>
+                  <div class="button__rollover-circle-container">
+                     <div class="button__rollover-circle"></div>
+                  </div>
+               </a>
+            </div>
+            <div
+               data-w-id="a60e84cd-6562-79b8-1aa0-c9f78695e9dd"
+               class="mobile-expanded__circle"
+            ></div>
+            <div
+               data-w-id="159dcbe7-bb39-db96-62a7-bb7505c43c11"
+               class="mobile-expanded__background"
+            ></div>
+            <div
+               data-w-id="35aa0b4f-099e-a3c5-d65b-098de097e5fd"
+               class="mobile-expanded__background is--close-trigger"
+            ></div>
+         </div>
+      </div>
+      <div data-w-id="5ff3c239-de0f-fc5d-b686-62bad844d59c" class="navigation">
+         <div class="navigation__logo">
+            <div class="avatar__container">
+               <a
+                  href="#"
+                  data-w-id="d6c3e884-fa43-f402-bf89-228a3bbdbc8f"
+                  class="avatar__link open-lightbox w-inline-block"
+               >
+                  <img
+                     src="./assets/svgs/logo.svg"
+                     loading="eager"
+                     alt="Photo of Sanne Wijbenga"
+                     class="avatar is--navigation"
+                  />
+               </a>
+            </div>
+            <a href="#top" class="menu__link-name">
+               <strong>Muzikie</strong>
+            </a>
+         </div>
+         <div
+            data-w-id="48b59dbe-4a43-4e73-8db0-556188480d05"
+            class="navigation__line"
+         ></div>
+         <div class="menu__mobile">
+            <div class="menu__links">
+               <a
+                  data-w-id="a181ddd1-53f6-553c-4459-bf50a891ce3d"
+                  href="#"
+                  class="menu__link-mobile w-inline-block"
+               >
+                  <div>Menu</div>
+                  <div class="menu__icon">
+                     <div class="menu-icon__line-1"></div>
+                     <div class="menu-icon__line-2"></div>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="menu__desktop">
+            <div class="menu__links">
+               <a href="#problem" class="menu__link-darkmode">Problem</a>
+               <a href="#example" class="menu__link-darkmode">Example</a>
+               <a href="#solution" class="menu__link-darkmode">Solution</a>
+               <a href="#faq" class="menu__link">FAQ</a>
+            </div>
+            <a
+               onclick="openChat()"
+               id="contactButtonNavigation"
+               data-w-id="5bde1399-3d40-b423-3096-ba5eec067cc3"
+               style="
+                  opacity: 1;
+                  border-color: rgb(205 189 165 / 78%);
+                  color: rgb(10, 42, 48);
+               "
+               href="#"
+               class="button is--secundary is--small open-lightbox w-inline-block"
+            >
+               <div class="">Coming soon</div>
+               <div class="button__rollover-circle-container">
+                  <div
+                     data-w-id="31e1f110-0641-fa7f-84e5-9e201c9198a1"
+                     class="button__rollover-circle is--secundary"
+                     style="
+                        opacity: 0;
+                        transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1)
+                           rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                           skew(0deg, 0deg);
+                        transform-style: preserve-3d;
+                        will-change: background;
+                        background-color: #453248;
+                     "
+                  ></div>
+               </div>
+            </a>
+         </div>
+      </div>
+      <div
+         data-w-id="faa30641-7c0b-44d4-3018-deeb456cf49a"
+         class="navigation__backdrop-container"
+      >
+         <div class="navigation__backdrop is--mobile w-embed">
+            <img src="./assets/svgs/menu-bg.svg" alt="" />
+         </div>
+         <div id="nav-back" class="navigation__backdrop w-embed">
+            <svg
+               width="3840"
+               height="610"
+               viewBox="0 0 3840 610"
+               fill="none"
+               xmlns="http://www.w3.org/2000/svg"
+            >
+               <rect
+                  width="3840"
+                  height="610"
+                  transform="matrix(1 0 0 -1 0 610)"
+                  fill="url(#paint0_linear_549_11196)"
+               ></rect>
+               <defs>
+                  <linearGradient
+                     id="paint0_linear_549_11196"
+                     x1="688.5"
+                     y1="0"
+                     x2="688.5"
+                     y2="610"
+                     gradientUnits="userSpaceOnUse"
+                  >
+                     <stop stop-color="CurrentColor" stop-opacity="0"></stop>
+                     <stop
+                        offset="0.0414816"
+                        stop-color="CurrentColor"
+                        stop-opacity="0.01"
+                     ></stop>
+                     <stop
+                        offset="0.0752383"
+                        stop-color="CurrentColor"
+                        stop-opacity="0.0324148"
+                     ></stop>
+                     <stop
+                        offset="0.102458"
+                        stop-color="CurrentColor"
+                        stop-opacity="0.0704"
+                     ></stop>
+                     <stop
+                        offset="0.12433"
+                        stop-color="CurrentColor"
+                        stop-opacity="0.120652"
+                     ></stop>
+                     <stop
+                        offset="0.142043"
+                        stop-color="CurrentColor"
+                        stop-opacity="0.181481"
+                     ></stop>
+                     <stop
+                        offset="0.156784"
+                        stop-color="CurrentColor"
+                        stop-opacity="0.2512"
+                     ></stop>
+                     <stop
+                        offset="0.169742"
+                        stop-color="CurrentColor"
+                        stop-opacity="0.328119"
+                     ></stop>
+                     <stop
+                        offset="0.182106"
+                        stop-color="CurrentColor"
+                        stop-opacity="0.410548"
+                     ></stop>
+                     <stop
+                        offset="0.195065"
+                        stop-color="CurrentColor"
+                        stop-opacity="0.4968"
+                     ></stop>
+                     <stop
+                        offset="0.209806"
+                        stop-color="CurrentColor"
+                        stop-opacity="0.585185"
+                     ></stop>
+                     <stop
+                        offset="0.227518"
+                        stop-color="CurrentColor"
+                        stop-opacity="0.674015"
+                     ></stop>
+                     <stop
+                        offset="0.24939"
+                        stop-color="CurrentColor"
+                        stop-opacity="0.7616"
+                     ></stop>
+                     <stop
+                        offset="0.27661"
+                        stop-color="CurrentColor"
+                        stop-opacity="0.846252"
+                     ></stop>
+                     <stop
+                        offset="0.310367"
+                        stop-color="CurrentColor"
+                        stop-opacity="0.926281"
+                     ></stop>
+                     <stop offset="0.351849" stop-color="CurrentColor"></stop>
+                  </linearGradient>
+               </defs>
+            </svg>
+         </div>
+      </div>
+      <div class="back-to-top">
+         <div class="back-to-top__link">
+            <a
+               href="#top"
+               data-w-id="2e686451-3c8f-804c-8a99-ba4467ed83a5"
+               style="opacity: 1"
+               class="button is--secundary is--small is--top-link w-inline-block"
+            >
+               <div class="icon-24 w-embed">
+                  <svg
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                  >
+                     <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11.106 2.55191L12 0.763916L12.8939 2.55177L12.8944 2.55277L12.901 2.56571C12.9071 2.57743 12.9169 2.59639 12.9305 2.62211C12.9577 2.67356 13 2.75196 13.0571 2.85347C13.1714 3.05663 13.3445 3.3515 13.5744 3.70746C14.0354 4.4213 14.7182 5.37058 15.6045 6.31604C17.3955 8.22642 19.8995 9.99998 23 9.99998V12C19.1005 12 16.1045 9.77354 14.1455 7.68393C13.72 7.23007 13.3378 6.77692 13 6.34527V24H11V6.34527C10.6622 6.77692 10.28 7.23007 9.85454 7.68393C7.89552 9.77354 4.89951 12 1 12V9.99998C4.10049 9.99998 6.60448 8.22642 8.39546 6.31604C9.28183 5.37058 9.96457 4.4213 10.4256 3.70746C10.6555 3.3515 10.8286 3.05663 10.9429 2.85347C11 2.75196 11.0423 2.67356 11.0695 2.62211C11.0831 2.59639 11.0929 2.57743 11.099 2.56571L11.106 2.55191Z"
+                        fill="CurrentColor"
+                     />
+                  </svg>
+               </div>
+               <div class="is--alt-text">Back to top</div>
+               <div class="button__rollover-circle-container icon-24">
+                  <div
+                     data-w-id="2e686451-3c8f-804c-8a99-ba4467ed83aa"
+                     class="button__rollover-circle is--secundary is--top-link"
+                  >
+                     <br />
+                     <br />
+                     <br />
+                     ‍
+                  </div>
+               </div>
+            </a>
+         </div>
+      </div>
 
-        <small>
-            <a href="https://medium.com/@muzikie/" class="m-2">BLOG</a>
-            <a href="https://muzikie.com/terms" class="m-2">TERMS</a>
-            <a href="https://muzikie.com/privacy" class="m-2">PRIVACY</a>
-        </small>
-    </footer>
+      <script>
+         //Disables or enables scrolling, when mobile menu is expanded or colapsed
 
-    <script src="build/muzikie-website.min.js"></script>
+         Webflow.push(function () {
+            /*Mobile Menu*/
+            $(".menu__link-mobile").click(function (e) {
+               e.preventDefault();
+               $("body").css("overflow", "hidden");
+            });
+            $(".menu__link-mobil-close").click(function (e) {
+               e.preventDefault();
+               $("body").css("overflow", "auto");
+            });
+            $(".is--mobile-link").click(function (e) {
+               e.preventDefault();
+               $("body").css("overflow", "auto");
+            });
+            /*Lightbox*/
 
-</body>
+            $(".open-lightbox").click(function (e) {
+               e.preventDefault();
+               $("body").css("overflow", "hidden");
+            });
+            $(".glasspane").click(function (e) {
+               e.preventDefault();
+               $("body").css("overflow", "auto");
+            });
+            $(".glasspane__trigger").click(function (e) {
+               e.preventDefault();
+               $("body").css("overflow", "auto");
+            });
+            $(".lightbox__close-button").click(function (e) {
+               e.preventDefault();
+               $("body").css("overflow", "auto");
+            });
+            $(".is--back-to-website").click(function (e) {
+               e.preventDefault();
+               $("body").css("overflow", "auto");
+            });
+         });
+      </script>
 
+      <script src="index.js"></script>
+      <script src="./jquery.js"></script>
+      ;
+   </body>
 </html>

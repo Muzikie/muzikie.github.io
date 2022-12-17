@@ -1,0 +1,290 @@
+ // contact form
+ 
+ <div
+         id="showcontact"
+         data-w-id="8dcfffda-0c0f-53b4-cc82-a962361c1c8c"
+         class="contact-lightbox"
+      >
+         <div
+            data-w-id="7f295361-0fe0-c1bb-ab40-aceeea783dcb"
+            class="glasspane"
+         ></div>
+         <div
+            data-w-id="d47de4a9-5542-7a7d-a99f-fdcdfb9ef907"
+            class="glasspane__trigger"
+         ></div>
+         <div
+            data-w-id="93ba40ff-1858-d433-e268-08881339e16e"
+            class="form-block w-form"
+         >
+            <a
+               onclick="closeFunction()"
+               data-w-id="7469f9d7-dad8-4da6-b0d0-4f94e5e7a3d2"
+               href="#"
+               class="lightbox__close-button w-inline-block"
+            >
+               <div class="icon-24 w-embed">
+                  <svg
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                  >
+                     <path
+                        d="M3 21L21 3"
+                        stroke="CurrentColor"
+                        stroke-width="2"
+                     />
+                     <path
+                        d="M3 3L21 21"
+                        stroke="CurrentColor"
+                        stroke-width="2"
+                     />
+                  </svg>
+               </div>
+               <div class="is--alt-text">Close</div>
+            </a>
+
+            <form
+               id="wf-form-Project-inquiry"
+               name="wf-form-Project-inquiry"
+               data-name="Project inquiry"
+               method="get"
+               class="form css-form-styling w-embed"
+            >
+               <div class="lightbox__column-1__container">
+                  <div class="lightbox__column-1">
+                     <h2 class="h2 is--lightbox">Let&#x27;s work together</h2>
+                     <p class="is--small is--lightbox">
+                        For new project inquiries, please fill out this form.
+                        <br />
+                     </p>
+                     <p class="is--small is--lightbox">
+                        You can also
+                        <a
+                           href="mailto:hello@sannewijbenga.com?subject=%F0%9F%91%8B"
+                           class="is--paragraph-link"
+                        >
+                           <strong>send me an email</strong>
+                        </a>
+                        or
+                        <a href="tel:+4915753120033" class="is--paragraph-link">
+                           <strong>give me a call</strong>
+                        </a>
+                        . I speak German, English and Dutch.
+                        <br />
+                     </p>
+                  </div>
+               </div>
+               <div class="scrollpane">
+                  <div class="scrollpane__cover"></div>
+                  <div class="container__16 is--form">
+                     <div class="text-field__container">
+                        <div class="field">
+                           <div class="text-input custom">
+                              <div class="html-field w-embed">
+                                 <input
+                                    class="custom-input"
+                                    placeholder="First Name*"
+                                    type="text"
+                                    name="firstName"
+                                    id="firstName"
+                                    maxlength="256"
+                                    required=""
+                                 />
+                                 <label class="floating-label" for="firstName">
+                                    First Name*
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="field">
+                           <div class="text-input custom">
+                              <div class="html-field w-embed">
+                                 <input
+                                    class="custom-input"
+                                    placeholder="Last Name*"
+                                    type="text"
+                                    name="lastName"
+                                    id="lastName"
+                                    maxlength="256"
+                                    required=""
+                                 />
+                                 <label class="floating-label" for="lastName">
+                                    Last Name*
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="text-field__container">
+                        <div class="field">
+                           <div class="text-input custom">
+                              <div class="html-field w-embed">
+                                 <input
+                                    class="custom-input"
+                                    placeholder="Name"
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    maxlength="256"
+                                    required=""
+                                 />
+                                 <label class="floating-label" for="email">
+                                    Email*
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="field">
+                           <div class="text-input custom">
+                              <div class="html-field w-embed">
+                                 <input
+                                    class="custom-input"
+                                    placeholder="Phone"
+                                    type="tel"
+                                    name="phone"
+                                    id="phone"
+                                    maxlength="256"
+                                 />
+                                 <label class="floating-label" for="phone">
+                                    Phone
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="text-field__container is--vertical">
+                        <div class="field">
+                           <div class="text-input custom is--text-area">
+                              <div class="html-field w-embed">
+                                 <textarea
+                                    class="custom-text-area"
+                                    placeholder="Describe your product and the project*"
+                                    type="text"
+                                    data-name="project"
+                                    id="project"
+                                    required=""
+                                    maxlength="5000"
+                                    style="resize: none"
+                                 ></textarea>
+                                 <label
+                                    class="floating-label-text-area"
+                                    for="project"
+                                 >
+                                    Describe your product and the project*
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="field">
+                           <div class="text-input custom">
+                              <div class="html-field w-embed">
+                                 <input
+                                    class="custom-input"
+                                    placeholder="What is the biggest challenge facing your business?*"
+                                    type="text"
+                                    name="challenges"
+                                    id="challenges"
+                                    maxlength="256"
+                                    required=""
+                                 />
+                                 <label class="floating-label" for="challenges">
+                                    What is the biggest challenge facing your
+                                    business?*
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="field">
+                           <div class="text-input custom">
+                              <div class="html-field w-embed">
+                                 <input
+                                    class="custom-input"
+                                    placeholder="What are you hoping to achieve?*"
+                                    type="text"
+                                    name="goal"
+                                    id="goal"
+                                    maxlength="256"
+                                    required=""
+                                 />
+                                 <label class="floating-label" for="goal">
+                                    What are you hoping to achieve?*
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="field">
+                           <div class="text-input custom">
+                              <div class="html-field w-embed">
+                                 <input
+                                    class="custom-input"
+                                    placeholder="How did you hear about me?*"
+                                    type="text"
+                                    name="referal"
+                                    id="referal"
+                                    maxlength="256"
+                                    required=""
+                                 />
+                                 <label class="floating-label" for="referal">
+                                    How did you hear about me?*
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="text-field__container is--button">
+                        <input
+                           type="submit"
+                           data-wait="One second..."
+                           value="Send message"
+                           class="button is--small is--submit w-button"
+                        />
+                        <div class="available-label__wrapper">
+                           <div class="available-label__bubble"></div>
+                           <div class="label">
+                              Available for projects for
+                              <strong>January 2023 and beyond</strong>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+            <div class="success-message w-form-done">
+               <div class="lightbox__column">
+                  <h2 class="h2 is--lightbox">Your message was send</h2>
+                  <p class="is--small is--lightbox">
+                     Thank you for reaching out. I will get back to you as soon
+                     as possible and look forward to talking more.
+                     <br />
+                  </p>
+                  <div class="form__succes-button-wrapper">
+                     <a
+                        data-w-id="8f1c4948-e2f2-1667-ab13-8eb3df2322d9"
+                        style="opacity: 1"
+                        href="#"
+                        class="button is--small is--back-to-website w-inline-block"
+                     >
+                        <div class="button__label">Back to website</div>
+                        <div class="button__rollover-circle-container">
+                           <div
+                              data-w-id="8f1c4948-e2f2-1667-ab13-8eb3df2322dd"
+                              class="button__rollover-circle"
+                           ></div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="error-message w-form-fail">
+               <div class="error__toaster">
+                  <div class="label">
+                     Oops! Something went wrong while submitting the form.
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div data-w-id="28ef9cc2-0d7a-8dc7-59b4-ee1550e7b4c0" class="lightbox">
+            <div class="lightbox__cover"></div>
+         </div>
+      </div>

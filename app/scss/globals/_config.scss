@@ -1,0 +1,226 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+   font-family: sans-serif;
+   -ms-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+   scroll-behavior: smooth;
+}
+body {
+   margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+   display: block;
+   height: 100%;
+}
+audio,
+canvas,
+progress,
+video {
+   display: inline-block;
+   vertical-align: baseline;
+}
+audio:not([controls]) {
+   display: none;
+   height: 0;
+}
+[hidden],
+template {
+   display: none;
+}
+a {
+   background-color: transparent;
+}
+a:active,
+a:hover {
+   outline: 0;
+}
+abbr[title] {
+   border-bottom: 1px dotted;
+}
+b,
+strong {
+   font-weight: bold;
+}
+dfn {
+   font-style: italic;
+}
+h1 {
+   font-size: 2em;
+   margin: 0.67em 0;
+}
+mark {
+   background: #ff0;
+   color: #000;
+}
+small {
+   font-size: 80%;
+}
+sub,
+sup {
+   font-size: 75%;
+   line-height: 0;
+   position: relative;
+   vertical-align: baseline;
+}
+sup {
+   top: -0.5em;
+}
+sub {
+   bottom: -0.25em;
+}
+img {
+   border: 0;
+}
+svg:not(:root) {
+   overflow: hidden;
+}
+figure {
+   margin: 1em 40px;
+}
+hr {
+   box-sizing: content-box;
+   height: 0;
+}
+pre {
+   overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+   font-family: monospace, monospace;
+   font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+   color: inherit;
+   font: inherit;
+   margin: 0;
+}
+button {
+   overflow: visible;
+}
+button,
+select {
+   text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"] {
+   cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+   cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+   border: 0;
+   padding: 0;
+}
+input {
+   line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+   box-sizing: border-box;
+   padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+   height: auto;
+}
+
+fieldset {
+   border: 1px solid #c0c0c0;
+   margin: 0 2px;
+   padding: 0.35em 0.625em 0.75em;
+}
+legend {
+   border: 0;
+   padding: 0;
+}
+textarea {
+   overflow: auto;
+}
+optgroup {
+   font-weight: bold;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+td,
+th {
+   padding: 0;
+}
+
+$dark-mode: #0d1e21;
+$light-mode: #feeae3;
+$white-color: #ffffff;
+$dark-color: #453248;
+
+body {
+   background-color: $light-mode;
+   font-family: Circularxxweb, sans-serif;
+   color: $dark-color;
+   font-size: 1vw;
+   line-height: 1.6;
+   font-weight: 300;
+   letter-spacing: 0em;
+}
+
+.container {
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   width: 100%;
+   max-width: 100em;
+   margin-right: auto;
+   margin-left: auto;
+   padding-right: 5.5em;
+   padding-left: 5.5em;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -webkit-flex-direction: column;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   grid-row-gap: 4em;
+   max-width: 1720px;
+}
+
+.page-wrapper {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   font-size: 1em;
+}
+
+.container.is--stage {
+   margin-top: 9em;
+   margin-bottom: 6em;
+}
+
+.container.is--stage.is--404 {
+   margin-top: 4em;
+}
+
+.container.is--work {
+   grid-row-gap: 19em;
+}

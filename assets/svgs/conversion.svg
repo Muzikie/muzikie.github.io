@@ -1,0 +1,24 @@
+       <svg
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                             >
+                                                <rect
+                                                   x="4"
+                                                   y="10"
+                                                   width="16"
+                                                   height="12"
+                                                   stroke="CurrentColor"
+                                                   stroke-width="2"
+                                                />
+                                                <path
+                                                   d="M12 14L12 18"
+                                                   stroke="CurrentColor"
+                                                   stroke-width="2"
+                                                />
+                                                <path
+                                                   d="M17 7V10H7V7C7 4.23858 9.23858 2 12 2C14.7614 2 17 4.23858 17 7Z"
+                                                   stroke="CurrentColor"
+                                                   stroke-width="2"
+                                                />
+                                             </svg>
