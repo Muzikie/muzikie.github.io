@@ -1732,7 +1732,7 @@ blockquote {
   transition: background-color 250ms ease, padding 550ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
 .accordion-item.js-accordion-item:hover {
-  background-color: #e5e4df; }
+  background-color: #e5dfe1; }
 
 .accordion-item.js-accordion-item.active {
   padding-top: 0.5em;
@@ -1746,7 +1746,7 @@ blockquote {
   color: #fff; }
 
 .accordion-item.js-accordion-item.is--darkmode:hover:not(.active) {
-  background: linear-gradient(#524154, #443c4e); }
+  background: #443c4e; }
 
 .accordion-item.js-accordion-item.is--darkmode.active {
   color: #fff;
@@ -3370,8 +3370,6 @@ blockquote {
     padding-bottom: 8px;
     color: #453248;
     border-radius: 24px; }
-  .accordion-item.js-accordion-item:hover {
-    background-color: #fff; }
   .accordion-item.js-accordion-item.active {
     padding-top: 8px;
     padding-bottom: 32px; }

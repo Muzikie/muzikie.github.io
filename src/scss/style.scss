@@ -1880,7 +1880,7 @@ blockquote {
 }
 
 .accordion-item.js-accordion-item:hover {
-   background-color: #e5e4df;
+   background-color: #e5dfe1;
 }
 
 .accordion-item.js-accordion-item.active {
@@ -1898,7 +1898,7 @@ blockquote {
 }
 
 .accordion-item.js-accordion-item.is--darkmode:hover:not(.active) {
-   background: linear-gradient(#524154, #443c4e);
+   background: #443c4e;
 }
 
 .accordion-item.js-accordion-item.is--darkmode.active {
@@ -3808,9 +3808,9 @@ blockquote {
       border-radius: 24px;
    }
 
-   .accordion-item.js-accordion-item:hover {
-      background-color: #fff;
-   }
+   // .accordion-item.js-accordion-item:hover {
+   //    background-color: #fff;
+   // }
 
    .accordion-item.js-accordion-item.active {
       padding-top: 8px;
