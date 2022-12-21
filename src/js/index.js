@@ -7,7 +7,7 @@ window.onscroll = function (event) {
    var elem = document.getElementById("el");
    var glem = document.querySelectorAll(".transition");
    var aTags = document.getElementsByTagName("a");
-   console.log(glem[1]);
+   // console.log(glem[1]);
    if (scroll < 300) {
       for (aTag of aTags) {
          aTag.style.color = "#453248";
@@ -91,16 +91,45 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 //mobile nav
 const nav = document.querySelector(".menu__link-mobile");
+const close = document.querySelector(".menu__link-mobil-close");
 const expanded = document.querySelector(".menu__mobile__expanded");
 const expandedBG = document.querySelector(".is--close-trigger");
-console.log(expandedBG);
+// console.log(expandedBG);
 
-nav.addEventListener("click", () => {
-   expanded.style.display = "flex";
-});
+// nav.addEventListener("click", () => {
+//    expanded.style.display = "flex";
+// });
 
 expandedBG.addEventListener("click", () => {
    expanded.style.display = "none";
 });
+close.addEventListener("click", () => {
+   expanded.style.display = "none";
+});
 
 // mobile-expanded__background is--close-trigger
+
+// const menu = document.querySelector(".menu-icon");
+// const menuItems = document.querySelectorAll(".menuItem");
+// const hamburger = document.querySelector(".menu__icon");
+// console.log(hamburger);
+// const closeIcon = document.querySelector(".is--alt-text");
+// const menuIcon = document.querySelector(".menuIcon");
+
+// function toggleMenu() {
+//    if (expanded.style.display === "flex") {
+//       expanded.style.display = "none";
+//    } else {
+//       expanded.style.display = "flex";
+//       console.log(expanded.style.display);
+//    }
+//
+//    //  closeIcon.style.display = "none";
+//    //  menuIcon.style.display = "block";
+// }
+
+function change() {
+   expanded.style.display = "flex";
+}
+console.log(`this is ${nav}`);
+// nav.addEventListener("click", toggleMenu);
