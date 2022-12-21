@@ -107,29 +107,18 @@ close.addEventListener("click", () => {
    expanded.style.display = "none";
 });
 
-// mobile-expanded__background is--close-trigger
-
-// const menu = document.querySelector(".menu-icon");
-// const menuItems = document.querySelectorAll(".menuItem");
-// const hamburger = document.querySelector(".menu__icon");
-// console.log(hamburger);
-// const closeIcon = document.querySelector(".is--alt-text");
-// const menuIcon = document.querySelector(".menuIcon");
-
-// function toggleMenu() {
-//    if (expanded.style.display === "flex") {
-//       expanded.style.display = "none";
-//    } else {
-//       expanded.style.display = "flex";
-//       console.log(expanded.style.display);
-//    }
-//
-//    //  closeIcon.style.display = "none";
-//    //  menuIcon.style.display = "block";
-// }
-
 function change() {
    expanded.style.display = "flex";
 }
-console.log(`this is ${nav}`);
-// nav.addEventListener("click", toggleMenu);
+
+// const gotos = document.querySelectorAll(".is--mobile-link");
+//
+// gotos.forEach.addEventListener("click", () => {
+//    expanded.style.display = "none";
+// });
+
+function onChange() {
+   expanded.style.display = "none";
+
+   // contactFrom.className = contactFrom.className === "chat" ? "" : "chat";
+}
