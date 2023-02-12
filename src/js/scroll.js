@@ -12,13 +12,13 @@ window.onscroll = function (event) {
       for (aTag of aTags) {
          aTag.style.color = "#453248";
       }
-      elem.style.transition = "opacity 0.1s linear 0s";
-      elem.style.opacity = 0.0;
+      // elem.style.transition = "opacity 0.1s linear 0s";
+      // elem.style.opacity = 0.0;
 
       backDrop.style.color = "#feeae3";
    } else if (scroll >= 300 && scroll < 600) {
       elem.style.transition = "opacity 0.5s linear 0s";
-      elem.style.opacity = 0.0;
+      // elem.style.opacity = 0.0;
       aTag.style.color = "#453248";
 
       backDrop.style.color = "#feeae3";
@@ -33,15 +33,13 @@ window.onscroll = function (event) {
       for (aTag of aTags) {
          aTag.style.color = "#453248";
       }
-      glem[1].style.transition = "opacity 0.4s linear 0.1s";
-      glem[1].style.opacity = 0.0;
+      // glem[1].style.transition = "opacity 0.4s linear 0.1s";
+      // glem[1].style.opacity = 0.0;
       // glem[1].style.backgroundColor = "#feeae3";
 
       backDrop.style.color = "#feeae3";
    }
 };
-
-/// open/close contact menu
 
 function openChat() {
    var contactFrom = document.getElementById("showcontact");
@@ -77,11 +75,11 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 const observer = new IntersectionObserver((entries) => {
-   entries.forEach((entery) => {
-      if (entery.isIntersecting) {
-         entery.target.classList.add("show");
+   entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+         entry.target.classList.add("show");
       } else {
-         entery.target.classList.remove("show");
+         entry.target.classList.remove("show");
       }
    });
 });
@@ -89,20 +87,20 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
-//mobile nav
+// mobile nav
 const nav = document.querySelector(".menu__link-mobile");
 const close = document.querySelector(".menu__link-mobil-close");
 const expanded = document.querySelector(".menu__mobile__expanded");
 const expandedBG = document.querySelector(".is--close-trigger");
-// console.log(expandedBG);
 
-// nav.addEventListener("click", () => {
-//    expanded.style.display = "flex";
-// });
+nav.addEventListener("click", () => {
+   expanded.style.display = "flex";
+});
 
 expandedBG.addEventListener("click", () => {
    expanded.style.display = "none";
 });
+
 close.addEventListener("click", () => {
    expanded.style.display = "none";
 });
@@ -111,14 +109,6 @@ function change() {
    expanded.style.display = "flex";
 }
 
-// const gotos = document.querySelectorAll(".is--mobile-link");
-//
-// gotos.forEach.addEventListener("click", () => {
-//    expanded.style.display = "none";
-// });
-
 function onChange() {
    expanded.style.display = "none";
-
-   // contactFrom.className = contactFrom.className === "chat" ? "" : "chat";
 }
