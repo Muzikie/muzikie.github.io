@@ -190,6 +190,9 @@ html.w-mod-touch * {
    max-width: 100%;
    display: inline-block;
 }
+.v-centered {
+   vertical-align: middle;
+}
 .w-clearfix:before,
 .w-clearfix:after {
    content: " ";
@@ -1315,9 +1318,12 @@ blockquote {
    font-size: 1em;
 }
 
+.is--gold {
+   color: #b99960;
+}
+
 .h2.is--gold {
    overflow: visible;
-   color: #b99960;
 }
 
 .h2.is--lightbox {
@@ -1403,9 +1409,42 @@ blockquote {
    padding-bottom: 8em;
 }
 
+.contact,
 .about {
    padding-top: 11em;
    padding-bottom: 8em;
+}
+
+.contact {
+   background-color: #35263B !important;
+   position: relative;
+
+   figure {
+      max-width: 50%;
+      margin: 0;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      z-index: 0;
+      transform: translateY(-50%);
+   }
+}
+
+.flex-row {
+   display: flex;
+   flex-flow: row nowrap;
+}
+
+.vertically-centered {
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-between;
+   align-items: start;
+   align-content: center;
+   padding-top: 7em;
+   padding-bottom: 7em;
+   position: relative;
+   z-index: 1;
 }
 
 .footer {
@@ -1961,6 +2000,39 @@ blockquote {
 .light-mode {
    position: relative;
    z-index: 50;
+}
+
+.social-links {
+   flex-flow: row nowrap;
+   align-items: start;
+   padding-top: 3em;
+   padding-bottom: 3em;
+
+   a {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+
+      img {
+         width: 40px;
+         height: auto;
+      }
+
+      p {
+         color: #fff;
+         text-indent: 10px;
+      }
+   }
+}
+
+@media screen and (max-width: 479px) {
+   .social-links {
+      flex-flow: column nowrap;
+
+      a {
+         padding-bottom: 20px;
+      }
+   }
 }
 
 .dark-mode {
@@ -2727,6 +2799,12 @@ blockquote {
    align-content: space-between;
    grid-column-gap: 4em;
    color: #feeae3;
+   pointer-events: none;
+}
+
+.navigation__backdrop svg,
+.navigation__backdrop svg > * {
+   pointer-events: none;
 }
 
 .navigation__backdrop.is--mobile {
@@ -4651,29 +4729,6 @@ blockquote {
 @media only screen and (min-width: 0) {
    .m-2 {
       margin: 2rem 0;
-   }
-}
-@media only screen and (min-width: 0) {
-   @keyframes move {
-      0% {
-         transform: translateY(-13%);
-      }
-
-      25% {
-         transform: translateY(-32%);
-      }
-      50% {
-         transform: translateY(-56%);
-      }
-      60% {
-         /* transform: translateY(-72%); */
-      }
-      75% {
-         transform: translateY(-77%);
-      }
-      100% {
-         transform: translateY(-80%);
-      }
    }
 }
 
