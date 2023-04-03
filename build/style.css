@@ -1321,6 +1321,7 @@ blockquote {
   padding-top: 11em;
   padding-bottom: 8em; }
 
+.subscription,
 .contact,
 .about {
   padding-top: 11em;
@@ -2919,6 +2920,9 @@ blockquote {
   border: 0px none #000;
   box-shadow: inset 0 0 0 2px #49a7ff; }
 
+.custom-input:focus + .floating-label {
+  font-size: 0.7em; }
+
 .custom-input::-webkit-input-placeholder {
   color: transparent;
   font-size: 0vw; }
@@ -2989,7 +2993,7 @@ blockquote {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 48.19em;
+  width: 40em;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -3023,8 +3027,8 @@ blockquote {
   max-width: 1720px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 3.75em;
-  padding-left: 3.75em;
+  padding-right: 6.75em;
+  padding-left: 6.75em;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -3034,7 +3038,6 @@ blockquote {
 
 .lightbox__column-1 {
   position: relative;
-  z-index: 661;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4340,6 +4343,8 @@ blockquote {
     -webkit-order: 0;
     -ms-flex-order: 0;
     order: 0; }
+  .custom-input:focus + .floating-label {
+    font-size: 0.2em; }
   .custom-text-area {
     position: relative;
     height: 134px; }
@@ -4615,6 +4620,15 @@ menu__link.navnar-color {
 .mt-5 {
   margin-top: 4rem;
   margin-bottom: 4rem; }
+
+#mc_embed_signup form {
+  margin: 0 !important; }
+  #mc_embed_signup form input {
+    border: 0;
+    font-size: 1em; }
+  #mc_embed_signup form .helper_text,
+  #mc_embed_signup form div.mce_inline_error {
+    background-color: transparent !important; }
 
 @media screen and (max-width: 1440px) {
   .button {

@@ -72,6 +72,22 @@ textarea,
    caret-color: #0a2a30;
 }
 
+#mc_embed_signup {
+   form {
+      margin: 0 !important;
+
+      input {
+         border: 0;
+         font-size: 1em;
+      }
+
+      .helper_text,
+      .mce_inline_error {
+         background-color: transparent;
+      }
+   }
+}
+
 /*Only Tablet and higher*/
 @media screen and (min-width: 768px) {
    .floating-label {
