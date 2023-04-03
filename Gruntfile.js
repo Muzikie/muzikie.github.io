@@ -12,8 +12,8 @@ module.exports = function (grunt) {
          build: {
             src: [
                "./node_modules/jquery/dist/jquery.min.js",
-               "./src/js/index.js",
-               "./src/js/jquery.js"
+               "./src/js/scroll.js",
+               "./src/js/accordion.js"
             ],
             dest: "build/<%= pkg.name %>.min.js"
          }
