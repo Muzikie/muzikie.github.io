@@ -3344,6 +3344,21 @@ blockquote {
    -webkit-flex-direction: column;
    -ms-flex-direction: column;
    flex-direction: column;
+   flex-flow: row nowrap;
+
+   .double {
+      width: 36%;
+   }
+}
+
+@media screen and (max-width: 479px) {
+   .text-field__container.is--vertical {
+      flex-flow: row wrap;
+
+      .double {
+         width: 100%;
+      }
+   }
 }
 
 .text-field__container.is--button {

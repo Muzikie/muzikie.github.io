@@ -3007,7 +3007,16 @@ blockquote {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  flex-flow: row nowrap; }
+  .text-field__container.is--vertical .double {
+    width: 36%; }
+
+@media screen and (max-width: 479px) {
+  .text-field__container.is--vertical {
+    flex-flow: row wrap; }
+    .text-field__container.is--vertical .double {
+      width: 100%; } }
 
 .text-field__container.is--button {
   margin-top: 0.5em;
@@ -4343,8 +4352,6 @@ blockquote {
     -webkit-order: 0;
     -ms-flex-order: 0;
     order: 0; }
-  .custom-input:focus + .floating-label {
-    font-size: 0.2em; }
   .custom-text-area {
     position: relative;
     height: 134px; }
