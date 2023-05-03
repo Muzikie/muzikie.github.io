@@ -4535,6 +4535,12 @@ blockquote {
     height: 422px;
     min-width: 393px; } }
 
+.change-header__overflow h4:hover, .container__16 .listWallet:hover {
+  text-decoration: underline; }
+
+.container__16 .listWallet {
+  color: #b99960 !important; }
+
 @font-face {
   font-family: "Circularxxweb";
   src: url("https://uploads-ssl.webflow.com/5c5c83856efacb1a6810474b/62755ed7363e3bc8c4e5e9e2_CircularXXWeb-Regular.woff2") format("woff2"), url("https://uploads-ssl.webflow.com/5c5c83856efacb1a6810474b/62755ed736a26a1eab9a33a0_CircularXXWeb-Regular.woff") format("woff");
