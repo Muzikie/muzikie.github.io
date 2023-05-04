@@ -1497,7 +1497,7 @@ blockquote {
   opacity: 1; }
 
 .menu__link.is--imprint {
-  display: none;
+  display: inline-block;
   margin-right: 0em;
   margin-left: 0em;
   padding-top: 0em;
@@ -1508,6 +1508,9 @@ blockquote {
   border-bottom-width: 0px;
   -webkit-transition: color 150ms ease, opacity 150ms ease, margin 300ms ease, padding 300ms ease, border-color 300ms ease;
   transition: color 150ms ease, opacity 150ms ease, margin 300ms ease, padding 300ms ease, border-color 300ms ease; }
+
+.footer__text a {
+  color: #b69fa5 !important; }
 
 .menu__link.is--imprint:hover {
   opacity: 1;
@@ -2694,6 +2697,17 @@ blockquote {
   flex: 0 0 auto;
   grid-column-gap: 0.5em;
   opacity: 0.75; }
+
+.text--message {
+  text-align: justify !important;
+  max-width: 100% !important; }
+
+.backHome {
+  margin-top: 53px !important; }
+
+.otherPages {
+  position: relative !important;
+  margin-bottom: -82px !important; }
 
 .menu__mobile__expanded {
   position: fixed;
