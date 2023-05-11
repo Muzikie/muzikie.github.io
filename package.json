@@ -15,6 +15,7 @@
    "license": "ISC",
    "dependencies": {
       "grunt-sass": "^3.1.0",
+      "handlebars": "^4.7.7",
       "jquery": "^3.5.1",
       "node-sass": "^8.0.0"
    },
