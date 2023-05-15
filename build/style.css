@@ -1335,7 +1335,7 @@ blockquote {
     margin: 0;
     position: absolute;
     right: 0;
-    top: 50%;
+    top: 37%;
     z-index: 0;
     transform: translateY(-50%); }
 
@@ -1349,7 +1349,6 @@ blockquote {
   justify-content: space-between;
   align-items: start;
   align-content: center;
-  padding-top: 7em;
   padding-bottom: 7em;
   position: relative;
   z-index: 1; }
