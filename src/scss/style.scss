@@ -639,6 +639,9 @@ textarea.w-select {
       padding-left: 10px;
    }
 }
+.is--status {
+   font-size: 3em;
+ }
 .w-lightbox-backdrop {
    color: #000;
    cursor: auto;
@@ -4712,6 +4715,54 @@ blockquote {
    }
 }
 
+.progress {
+   padding: 2px;
+   display: flex;
+   width: 100%;
+   flex-direction: column;
+   justify-content: center;
+  }
+
+.progress__bar__definitions .monthly__status {
+   justify-content: flex-start;
+}
+
+ .progress__status {
+   height: 30px;
+   width: 100%;
+   border: 3px solid #453248;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border-radius: 17px;
+   overflow: hidden;
+}
+
+.progress__bar {
+   height: 100%;
+   width: 30%;
+   background-color: #7f4788;
+}
+ 
+.progress__bar__months, .progress__bar__definitions {
+   width: 100%;
+   display: flex;
+}
+
+.monthly__status {
+  width: 20% !important;
+  text-align: center;
+}
+
+.process.status {
+   padding-bottom: 0px;
+   margin-bottom: 0px;
+ }
+
+.is--status {
+   font-size: 16px;
+   font-weight: bold;
+}
+
 @keyframes move {
    0% {
       transform: translateY(0%);
@@ -4758,6 +4809,43 @@ blockquote {
 }
 
 @media screen and (max-width: 767px) {
+   .progress {
+      padding: 2px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: 400px;
+   }
+   
+   .progress__status {
+      height: 100%;
+      width: 30px;
+      margin-right: 10px;
+      margin-left: 10px;
+   }
+   
+   .progress__bar {
+      height: 28%;
+      width: 100%;
+   }
+   
+   .progress__bar__months, .progress__bar__definitions {
+      width: 255px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+   }
+   
+   .monthly__status {
+     height: 20% !important;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     width: 100% !important;
+   }
+
    h1 {
       font-size: 31px;
       line-height: 40px;
@@ -5508,6 +5596,15 @@ blockquote {
       min-width: 393px;
    }
 }
+
+.change-header__overflow h4:hover, .container__16 .listWallet:hover {
+   text-decoration: underline;
+}
+
+.container__16 .listWallet {
+   color: #b99960 !important;
+}
+
 @font-face {
    font-family: "Circularxxweb";
    src: url("https://uploads-ssl.webflow.com/5c5c83856efacb1a6810474b/62755ed7363e3bc8c4e5e9e2_CircularXXWeb-Regular.woff2")
