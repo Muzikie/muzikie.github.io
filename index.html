@@ -720,25 +720,162 @@
                   </div>
                </div>
                <!-- Contact Us -->
-
-                  <div class="container">
-                     <div class="container__32">
-                        <h2 class="h2">Let's get connected</h2>
-                        <p class="is--big is--stage">We are building Muzikie with love for everybody who creates or listens to music.</p>
-                        <p class="is--big is--stage">Contact us if you need more information, or you have a feedback or suggestion for us.</p>
+               <div class="container">
+                  <div class="container__text flex-row">
+                     <div class="vertically-centered">
+                        <div class="container__16">
+                           <h2 class="h2">Let's get connected</h2>
+                           <p class="is--big is--stage">
+                              We are building Muzikie with love for everybody 
+                              who creates or listens to music.
+                           </p>
+                           <p class="is--big is--stage">
+                              Contact us if you need more information, 
+                              or you have a feedback or suggestion for us.
+                           </p>
+                        </div>
+                        <br>
                         <div type="button" id="button" class="stage__buttons">
-                           <a
+                           <button
                               style="opacity: 1"
                               target="_blank"
-                              href="/"
                               class="button open-lightbox w-inline-block"
+                              onclick="openChat();"
                            >
                               <div class="button__label">Let’s chat</div>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- End of Contact Us -->
+               <!-- contact form -->
+               <div data-w-id="8dcfffda-0c0f-53b4-cc82-a962361c1c8c" id="contact-lightbox" class="contact-lightbox">
+                  <div data-w-id="7f295361-0fe0-c1bb-ab40-aceeea783dcb" class="glasspane"></div>
+                  <div data-w-id="d47de4a9-5542-7a7d-a99f-fdcdfb9ef907" class="glasspane__trigger"></div>
+                  <div data-w-id="93ba40ff-1858-d433-e268-08881339e16e" class="form-block w-form">
+                     <button data-w-id="7469f9d7-dad8-4da6-b0d0-4f94e5e7a3d2" onclick="closeFunction();" class="lightbox__close-button w-inline-block">
+                        <div class="icon-24 w-embed">
+                           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M3 21L21 3" stroke="CurrentColor" stroke-width="2"/>
+                                 <path d="M3 3L21 21" stroke="CurrentColor" stroke-width="2"/>
+                           </svg>
+                        </div>
+                        <div class="is--alt-text">Close</div>
+                     </button>
+                  </div>
+                  <form id="wf-form-Project-inquiry" 
+                     name="wf-form-Project-inquiry" 
+                     data-name="Project inquiry"
+                     action="https://formspree.io/f/xpzenkeb"
+                     method="POST" 
+                     class="form">
+                     <div class="lightbox__column-1__container">
+                        <div class="lightbox__column-1 description-form">
+                           <h3>Let's get connected</h3>
+                           <p class="is--small is--lightbox">
+                              We are building Muzikie with love for everybody 
+                              who creates or listens to music.
+                              <br/>
+                           </p>
+                           <p class="is--small is--lightbox">
+                              Contact us if you need more information,
+                              or you have a feedback or suggestion for us.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="scrollpane">
+                        <div class="scrollpane__cover">
+                           <div class="container__16 is--form">
+                              <div class="text-field__container">
+                                 <div class="field">
+                                       <div class="text-input custom">
+                                          <div class="html-field w-embed">
+                                             <input class="custom-input" placeholder="First Name*" type="text" name="firstName" id="firstName" maxlength="256" required="">
+                                             <label class="floating-label" for="firstName">First Name*</label>
+                                          </div>
+                                       </div>
+                                 </div>
+                                 <div class="field">
+                                       <div class="text-input custom">
+                                          <div class="html-field w-embed">
+                                             <input class="custom-input" placeholder="Last Name*" type="text" name="lastName" id="lastName" maxlength="256" required="">
+                                             <label class="floating-label" for="lastName">Last Name*</label>
+                                          </div>
+                                       </div>
+                                 </div>
+                              </div>
+                              <div class="text-field__container">
+                                 <div class="field">
+                                       <div class="text-input custom">
+                                          <div class="html-field w-embed">
+                                             <input class="custom-input" placeholder="Email*" type="email" name="email" id="email" maxlength="256" required="">
+                                             <label class="floating-label" for="email">Email*</label>
+                                          </div>
+                                       </div>
+                                 </div>
+                                 <div class="field">
+                                       <div class="text-input custom">
+                                          <div class="html-field w-embed">
+                                             <input class="custom-input" placeholder="Phone" type="tel" name="phone" id="phone" maxlength="256">
+                                             <label class="floating-label" for="phone">Phone</label>
+                                          </div>
+                                       </div>
+                                 </div>
+                              </div>
+                              <div class="text-field__container">
+                                 <div class="field">
+                                       <div class="text-input custom is--text-area">
+                                          <div class="html-field w-embed">
+                                             <textarea class="custom-text-area" placeholder="Message*" type="text" data-name="Message" id="Message" required="" maxlength="5000" style="resize: none;"></textarea>
+                                             <label class="floating-label-text-area" for="Message">Message*</label>
+                                          </div>
+                                       </div>
+                                 </div>
+                              </div>
+                              <div class="text-field__container">
+                                 <div class="field">
+                                       <div class="text-input custom">
+                                          <div class="html-field w-embed">
+                                             <input class="custom-input" placeholder="Website" type="url" name="website" id="website" maxlength="256">
+                                             <label class="floating-label" for="website">Website*</label>
+                                          </div>
+                                       </div>
+                                 </div>
+                              </div>
+                              <div class="text-field__container is--button">
+                                 <input type="submit" data-wait="One second..." value="Send message" class="button is--small is--submit w-button"/>
+                           </div>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+                  <div class="success-message w-form-done">
+                     <div class="lightbox__column">
+                        <h2 class="h2 is--lightbox">Your message was send</h2>
+                        <p class="is--small is--lightbox">
+                           Thank you for reaching out. I will get back to you as soon as possible and look forward to talking more.<br/>
+                        </p>
+                        <div class="form__succes-button-wrapper">
+                           <a data-w-id="8f1c4948-e2f2-1667-ab13-8eb3df2322d9" style="opacity:1" href="#" class="button is--small is--back-to-website w-inline-block">
+                              <div class="button__label">Back to website</div>
+                              <div class="button__rollover-circle-container">
+                                    <div data-w-id="8f1c4948-e2f2-1667-ab13-8eb3df2322dd" class="button__rollover-circle"></div>
+                              </div>
                            </a>
                         </div>
                      </div>
                   </div>
-               <!-- End of Contact Us -->
+                  <div class="error-message w-form-fail">
+                     <div class="error__toaster">
+                           <div class="label">Oops! Something went wrong while submitting the form.</div>
+                     </div>
+                  </div>
+                  <div data-w-id="28ef9cc2-0d7a-8dc7-59b4-ee1550e7b4c0" class="lightbox">
+                     <div class="lightbox__cover"></div>
+                  </div>
+               </div>
+               <!-- End of Contact form -->
             </div>
             <!-- End of Contact section -->
             <!-- Subscription section -->
