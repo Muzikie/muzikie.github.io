@@ -42,16 +42,14 @@ window.onscroll = function (event) {
 };
 
 function openChat() {
-   var contactFrom = document.getElementById("showcontact");
-
+   var contactFrom = document.getElementById("contact-lightbox");
    contactFrom.classList.add("chat");
    document.getElementById("wf-form-Project-inquiry").classList.add("chat");
-
-   // contactFrom.className = contactFrom.className === "chat" ? "" : "chat";
+   //contactFrom.className = contactFrom.className === "chat" ? "" : "chat";
 }
 
 function closeFunction() {
-   var contactFrom = document.getElementById("showcontact");
+   var contactFrom = document.getElementById("contact-lightbox");
    contactFrom.classList.remove("chat");
    document.getElementById("wf-form-Project-inquiry").classList.remove("chat");
 }

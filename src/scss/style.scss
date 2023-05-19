@@ -91,6 +91,10 @@ body {
    letter-spacing: 0em;
 }
 
+.form {
+   margin-top: 136px;
+}
+
 .container {
    display: -webkit-box;
    display: -webkit-flex;
@@ -629,6 +633,7 @@ textarea.w-select {
 .w-dropdown-link:focus {
    outline: 0;
 }
+
 @media screen and (max-width: 767px) {
    .w-nav-brand {
       padding-left: 10px;
@@ -1445,7 +1450,6 @@ blockquote {
    justify-content: space-between;
    align-items: start;
    align-content: center;
-   padding-top: 7em;
    padding-bottom: 7em;
    position: relative;
    z-index: 1;
@@ -2224,6 +2228,10 @@ blockquote {
    -webkit-align-items: flex-end;
    -ms-flex-align: end;
    align-items: flex-end;
+}
+
+.chat .is--form {
+   z-index: 999 !important;
 }
 
 .container__24 {
@@ -3099,7 +3107,7 @@ blockquote {
    right: 0%;
    bottom: auto;
    z-index: 750;
-   margin-top: 3em;
+   margin-top: 5em;
    margin-right: 1.5em;
    padding: 0.25em 0.25px 0.25em 0.25em;
    -webkit-transition: opacity 150ms ease;
@@ -3180,10 +3188,6 @@ blockquote {
       to(hsla(0, 0%, 100%, 0))
    );
    background-image: linear-gradient(180deg, #fff, hsla(0, 0%, 100%, 0));
-}
-
-.css-form-styling {
-   display: none;
 }
 
 .html-field {
@@ -3334,7 +3338,7 @@ blockquote {
    display: -webkit-flex;
    display: -ms-flexbox;
    display: flex;
-   width: 40em;
+   width: 56em;
    -webkit-box-orient: horizontal;
    -webkit-box-direction: normal;
    -webkit-flex-direction: row;
@@ -5685,8 +5689,77 @@ menu__link.navnar-color {
 }
 
 .chat {
-   animation: fade-in 3s forwards;
-   display: block;
+   animation: fade-in 3s forwards !important;
+   display: block !important;
+}
+
+.is--paragraph-link {
+    text-decoration-color: rgba(10, 42, 48, 0.2);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.1em;
+}
+
+input, textarea, [contenteditable] {
+    caret-color: #0A2A30;
+}
+
+.description-form h3, .description-form p {
+   color: #453248 !important;
+}
+
+.description-form {
+   z-index: 9999 !important;
+}
+
+/*Only Tablet and higher*/
+@media screen and (min-width: 768px) {
+    .floating-label {
+        pointer-events: none;
+    }
+
+    .custom-input:not(:placeholder-shown) {
+        padding-top: .9em;
+    }
+
+    .custom-input:not(:placeholder-shown) + .floating-label {
+        color: #313C3D;
+        transform: scale(.7);
+        top: .3em;
+    }
+
+    .custom-input:not(:focus) + .floating-label {
+        color: #82837B;
+    }
+
+    /*Text-area*/
+    .floating-label-text-area {
+        pointer-events: none;
+    }
+
+    .custom-text-area:not(:placeholder-shown) {
+        padding-top: 1.2em;
+    }
+
+    .custom-text-area:not(:placeholder-shown) + .floating-label-text-area {
+        color: #313C3D;
+        transform: scale(.7);
+        top: .3em;
+    }
+
+    .custom-text-area:not(:focus) + .floating-label-text-area {
+        color: #82837B;
+    }
+}
+
+/*no blue line around focussed state*/
+.custom-input:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+.custom-text-area:focus {
+    border: none !important;
+    outline: none !important;
 }
 
 .text-purple {
