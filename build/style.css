@@ -604,6 +604,28 @@ textarea.w-select {
 .w-dropdown-link:focus {
   outline: 0; }
 
+.support-us {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: revert;
+  box-sizing: border-box; }
+
+.container--left {
+  position: relative;
+  display: flex;
+  width: 30%;
+  padding-left: 10px; }
+
+.container--right {
+  position: relative;
+  display: flex;
+  width: 60%; }
+
+.container--right .container {
+  padding-left: 0px;
+  padding-right: 0px; }
+
 @media screen and (max-width: 767px) {
   .w-nav-brand {
     padding-left: 10px; } }
@@ -4822,7 +4844,12 @@ input, textarea, [contenteditable] {
 
 @media screen and (max-width: 960px) {
   .h4 {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .support-us {
+    flex-direction: column;
+    grid-row-gap: 30px; }
+  .container--left, .container--right {
+    width: 100%; } }
 
 @media screen and (max-width: 960px) {
   .is--testimonial {
