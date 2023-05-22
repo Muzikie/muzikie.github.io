@@ -92,7 +92,7 @@ body {
 }
 
 .form {
-   margin-top: 136px;
+   margin-top: 63px;
 }
 
 .container {
@@ -659,6 +659,14 @@ textarea.w-select {
    padding-right: 0px;
 }
 
+.chat .lightbox__column-1__container {
+   width: 30%;
+}
+
+.chat .scrollpane {
+   width: 60%;
+}
+
 @media screen and (max-width: 767px) {
    .w-nav-brand {
       padding-left: 10px;
@@ -1177,12 +1185,23 @@ textarea.w-select {
 .w--nav-dropdown-list-open {
    position: static;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
    .w-nav[data-collapse="medium"] .w-nav-menu {
       display: none;
    }
    .w-nav[data-collapse="medium"] .w-nav-button {
       display: block;
+   }
+   .chat {
+      height: auto !important;
+      overflow: scroll !important;
+   }
+   .chat .lightbox__column-1__container, .chat .scrollpane {
+      width: 100%;
+   }
+   .chat .container__16.is--form {
+      padding: 0px !important;
+      margin: 0px !important;
    }
 }
 @media screen and (max-width: 767px) {
@@ -2575,6 +2594,7 @@ blockquote {
    -webkit-transition: background-color 150ms ease;
    transition: background-color 150ms ease;
    letter-spacing: 0.04em;
+   margin-bottom: 30px;
 }
 
 .button.is--small.is--submit:hover {
@@ -3133,7 +3153,7 @@ blockquote {
    right: 0%;
    bottom: auto;
    z-index: 750;
-   margin-top: 5em;
+   margin-top: 6em;
    margin-right: 1.5em;
    padding: 0.25em 0.25px 0.25em 0.25em;
    -webkit-transition: opacity 150ms ease;
@@ -4576,6 +4596,7 @@ blockquote {
       height: 16px;
       margin-right: 48px;
       margin-left: 48px;
+      margin-top: 87px;
    }
 
    .text-field__container {
@@ -5244,7 +5265,7 @@ blockquote {
    }
 
    .lightbox__close-button {
-      margin-top: 24px;
+      margin-top: 67px;
       margin-right: 24px;
    }
 
@@ -5260,8 +5281,6 @@ blockquote {
    }
 
    .scrollpane__cover {
-      top: 48px;
-      display: none;
       margin-right: 24px;
       margin-left: 24px;
    }
@@ -5719,7 +5738,10 @@ menu__link.navnar-color {
 
 .chat {
    animation: fade-in 3s forwards !important;
-   display: block !important;
+   display: flex !important;
+   width: 100%;
+   height: auto !important;
+   overflow: scroll !important;
 }
 
 .is--paragraph-link {
@@ -5732,7 +5754,7 @@ input, textarea, [contenteditable] {
     caret-color: #0A2A30;
 }
 
-.description-form h3, .description-form p {
+.description-form h2, .description-form p {
    color: #453248 !important;
 }
 
@@ -5940,6 +5962,9 @@ input, textarea, [contenteditable] {
       grid-row-gap: 24px;
       margin-bottom: 4rem;
    }
+   .form {
+      overflow: auto !important;
+     }
 }
 
 @media screen and (max-width: 500px) {
