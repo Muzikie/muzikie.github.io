@@ -2907,6 +2907,7 @@ blockquote {
    -ms-flex-align: center;
    align-items: center;
    grid-column-gap: 2em;
+   overflow: hidden;
 }
 
 .find-out-more-arrow__container {
@@ -3380,9 +3381,6 @@ blockquote {
    -ms-flex-direction: column;
    flex-direction: column;
    flex-flow: row nowrap;
-
-   .double {
-   }
 }
 
 @media screen and (max-width: 479px) {
@@ -4834,6 +4832,12 @@ blockquote {
 }
 
 @media screen and (max-width: 767px) {
+   .stage__buttons {
+      flex-direction: column;
+      grid-row-gap: 16px !important;
+      align-items: flex-start !important;
+   }
+
    .progress {
       padding: 2px;
       width: 100%;
@@ -5951,6 +5955,9 @@ input, textarea, [contenteditable] {
    .is--testimonial {
       font-size: 18px;
    }
+   .stage__buttons .button {
+      padding: 0.9em 1em;
+  }
 }
 
 @media screen and (min-width: 1440px) {
