@@ -1465,6 +1465,7 @@ blockquote {
    padding-bottom: 8em;
 }
 
+
 .subscription,
 .contact,
 .about {
@@ -2324,10 +2325,138 @@ blockquote {
 }
 
 .change-header__move {
-   margin-top: -0.25em;
-   animation: move infinite 10s cubic-bezier(0.78, -0.11, 0.31, 1.1);
-   animation-direction: alternate;
+   // margin-top: -0.25em;
+   // animation: move infinite 10s cubic-bezier(0.78, -0.11, 0.31, 1.1);
+   // animation-direction: alternate;
 }
+
+@keyframes fadeInOut {
+   0% {
+      opacity: 0;
+   }
+   
+   2% {
+   opacity: 0;
+   }
+   
+   5% {
+   opacity: 1;
+   }
+   
+   17% {
+   opacity: 1;
+   }
+   
+   19% {
+   opacity: 1;
+   }
+   
+   24% {
+   opacity: 0;
+   }
+   
+   80% {
+   opacity: 0;
+   }
+  
+  100% {
+  opacity: 0;
+  }
+  }
+
+.change-header__move .title--changing {
+   position: absolute;
+   animation-name: fadeInOut;
+   animation-iteration-count: infinite;
+   opacity: 0;
+}
+
+.title--changing:nth-child(1){
+   animation-duration: 15s; 
+ }
+
+ .title--changing:nth-child(2){
+   animation-delay: 3s;
+  animation-duration: 15s;
+ }
+
+ .title--changing:nth-child(3){
+   animation-delay: 6s;
+  animation-duration: 15s; 
+ }
+
+ .title--changing:nth-child(4){
+   animation-delay: 9s;
+  animation-duration: 15s;
+ }
+
+ .title--changing:nth-child(5){
+   animation-delay: 12s;
+  animation-duration: 15s;
+ }
+ 
+
+// .title--changing {
+//    position: absolute;
+// }
+
+// .title--changing:nth-child(1){
+//    animation-name: fade;
+//    animation-fill-mode:both;
+//    animation-duration: 3s;
+//    animation-direction: normal;
+//    animation-direction: alternate;
+//    animation-iteration-count:2;
+//    animation-delay: 0;
+//  }
+
+//  .title--changing:nth-child(2){
+//    animation-name: fade;
+//    animation-fill-mode:both;
+//    animation-duration: 3s;
+//    animation-direction: normal;
+//    animation-direction: alternate;
+//    animation-iteration-count:2;
+//    animation-delay: 3s;
+//  }
+
+//  .title--changing:nth-child(3){
+//    animation-name: fade;
+//    animation-fill-mode:both;
+//    animation-duration: 3s;
+//    animation-direction: normal;
+//    animation-direction: alternate;
+//    animation-iteration-count:2;
+//    animation-delay: 6s;
+//  }
+
+//  .title--changing:nth-child(4){
+//    animation-name: fade;
+//    animation-fill-mode:both;
+//    animation-duration: 3s;
+//    animation-direction: normal;
+//    animation-direction: alternate;
+//    animation-iteration-count:2;
+//    animation-delay: 9s;
+//  }
+ 
+//  .title--changing:nth-child(5){
+//    animation-name: fade;
+//    animation-fill-mode: both;
+//    animation-duration: 3s;
+//    animation-direction: alternate;
+//    animation-iteration-count:2;
+//    animation-delay: 12s;
+//  }
+
+//  @keyframes fade{
+//    0%,50% {
+//      opacity: 0;
+// }
+//    100%{
+//      opacity: 1;
+//    }
+// }
 
 .container-great-for {
    display: -webkit-box;
