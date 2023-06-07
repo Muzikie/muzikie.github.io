@@ -366,6 +366,15 @@ label {
    margin-bottom: 5px;
    font-weight: bold;
 }
+.artist.form .text-field__container.is--button {
+   justify-content: end;
+}
+.artist-tag {
+   position: absolute;
+   right: 127px;
+   top: 71px;
+   z-index: 9999999;
+}
 .w-input,
 .w-select {
    display: block;
@@ -425,7 +434,7 @@ textarea.w-select {
    background-color: #f3f3f3;
 }
 
-.artist.menu__desktop {
+.artist_nav.menu__desktop {
    display: flex !important;
 }
 
@@ -544,7 +553,7 @@ textarea.w-select {
    outline: 0;
 }
 
-.artist.menu__link-name {
+.artist_nav.menu__link-name {
    display: flex;
 }
 
@@ -1222,6 +1231,7 @@ textarea.w-select {
       width: 88% !important;
    }
 
+
    .form.artist  {
       margin-top: 14px !important;
       width: 100%;
@@ -1232,7 +1242,7 @@ textarea.w-select {
       display: none;
    }
    
-   .artist.navigation__line {
+   .artist_nav.navigation__line {
       display: none !important;
    }
 
@@ -2018,12 +2028,18 @@ blockquote {
    align-items: center !important;
 }
 
-.taste-of-music .container__text {
+.taste-of-music .div-block {
    background-color: #fff;
    border-radius: 35px;
    overflow: hidden;
+   padding-left: 38px;
 }
 
+.taste-of-music-container {
+   width: 48% !important;
+   padding-top: 45px;
+   padding-bottom: 45px;
+}
 .form.artist {
    margin-top: 80px;
 }
@@ -3251,8 +3267,8 @@ blockquote {
 }
 
 .tag.is--recommended {
-   padding-top: 0.38em;
-   padding-bottom: 0.38em;
+   padding-top: 0.2em;
+   padding-bottom: 0.2em;
    background-color: #2bcb9b;
    color: #fff;
    font-size: 1.13em;
@@ -3561,6 +3577,11 @@ blockquote {
    font-size: 0.7em;
 }
 
+.taste-of-music .process__illustration {
+   margin-top: 0px !important;
+   width: 34.63em !important;
+   height: 37.94em !important;
+}
 .custom-text-area {
    position: absolute;
    width: 100%;
@@ -4077,7 +4098,7 @@ blockquote {
       width: auto;
       line-height: 1.5;
    }
-
+   
    .container {
       position: relative;
       padding-right: 24px;
@@ -4220,6 +4241,16 @@ blockquote {
 
    .navigation__line.force--white {
       background-color: hsla(0, 0%, 100%, 0.3);
+   }
+
+   .taste-of-music-container {
+      width: 100% !important;
+      padding-right: 30px !important;
+   }
+
+   .artist-tag {
+      right: 60px !important;
+      top: 55px !important;
    }
 
    .work {
@@ -5842,6 +5873,9 @@ blockquote {
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
+   }
+   .artist-tag { 
+      display: flex !important;
    }
 
    .mobile-links__container {
