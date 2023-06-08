@@ -318,6 +318,31 @@ html.w-mod-touch * {
    vertical-align: middle !important;
 }
 
+.container__16.spotlight {
+   width: 47% !important;
+}
+
+.artist.form {
+   align-items: flex-start !important;
+   justify-content: space-between !important;
+}
+
+.pioneer {
+   width: 44% !important;
+   margin-top: 0px !important;
+}
+.pioneer .container__16.is--form {
+   padding-left: 0px !important;
+   padding-right: 0px !important;
+}
+.pioneer  .text-field__container {
+   width: 100% !important;
+}
+
+.max {
+   width: 53% !important;
+}
+
 .w-list-unstyled {
    padding-left: 0;
    list-style: none;
@@ -368,11 +393,12 @@ label {
 }
 .artist.form .text-field__container.is--button {
    justify-content: end;
+   grid-column-gap: 0px;
 }
 .artist-tag {
    position: absolute;
-   right: 127px;
-   top: 71px;
+   right: 148px;
+   top: 69px;
    z-index: 9999999;
 }
 .w-input,
@@ -732,6 +758,14 @@ textarea.w-select {
    opacity: 0;
    -webkit-tap-highlight-color: transparent;
 }
+.space_section {
+   margin-top: 190px !important;
+   margin-bottom: 190px !important;
+}
+.space_section_last {
+   margin-top: 190px !important;
+}
+
 .w-lightbox-backdrop,
 .w-lightbox-container {
    height: 100%;
@@ -1231,15 +1265,19 @@ textarea.w-select {
       width: 88% !important;
    }
 
-
-   .form.artist  {
-      margin-top: 14px !important;
-      width: 100%;
+   .pioneer {
+      width: 100% !important;
+      margin-top: 0 !important;
    }
+
 }
 @media screen and (max-width: 767px) {
    .w-nav[data-collapse="small"] .w-nav-menu {
       display: none;
+   }
+
+   .pioneer {
+      margin-top: 9px !important;
    }
    
    .artist_nav.navigation__line {
@@ -2040,9 +2078,6 @@ blockquote {
    padding-top: 45px;
    padding-bottom: 45px;
 }
-.form.artist {
-   margin-top: 80px;
-}
 
 .artist #mc-embedded-subscribe {
    margin: 0 !important;
@@ -2676,12 +2711,12 @@ blockquote {
    height: 26.94em !important;
 }
 
-.collaboration  {
+.collaboration, .raise-funds   {
    display: flex;
    position: relative;
 }
 
-.collaboration .process__illustration {
+.collaboration .process__illustration, .raise-funds .process__illustration{
    display: flex;
    object-fit: cover;
    width: 100% !important;
@@ -2692,11 +2727,20 @@ blockquote {
    background-size: cover;
 }
 
-.collaboration .container {
+.collaboration .container, .raise-funds .container {
    display: flex;
    position: absolute;
    z-index: 9999 !important;
    bottom: 0;
+}
+
+.top-shadow {
+   position: absolute;
+   width: 100%;
+   height: 91px;
+   background: linear-gradient(180deg, #463349 0%, rgba(70, 51, 73, 0) 100%);
+   z-index: 99;
+   top: 0;
 }
 
 .shadow {
@@ -2708,6 +2752,32 @@ blockquote {
    bottom: 0;
 }
 
+.raise-funds  {
+   justify-content: center;
+   overflow: hidden;
+   height: 712px;
+}
+
+.raise-funds .artist-tag {
+   right: 115px;
+   top: 127px;
+}
+
+.raise-funds .process__illustration {
+   width: 88% !important;
+   top: 95px;
+   border-radius: 29px;
+   height: 565px;
+}
+
+.raise-funds .container {
+   bottom: 58px;
+}
+
+.raise-funds .div-block {
+   justify-content: center;
+}
+
 .div-block.fair--income {
    flex-direction: column !important;
 }
@@ -2715,11 +2785,24 @@ blockquote {
 .container__16.fair--income {
    flex-direction: row !important;
    align-items: center;
+   justify-content: space-around;
+}
+
+.fair--income-left {
+   width: 41%;
+}
+
+.fair--income-bottom {
+   align-items: center;
+}
+
+.fair--income .is--small.is--accordion {
+   width: 91%;
 }
 
 .percentage {
-   font-size: 15.75em;
-   width: 41%;
+   font-size: 16.75em;
+   width: 37%;
    height: 346px;
    display: flex;
    font-weight: bold;
@@ -4115,6 +4198,11 @@ blockquote {
       margin-top: 80px;
    }
 
+   .raise-funds .artist-tag {
+      right: 72px !important;
+      top: 118px !important;
+   }
+
    .container.is--work {
       grid-row-gap: 232px;
    }
@@ -4239,6 +4327,11 @@ blockquote {
       grid-column-gap: 40px;
    }
 
+   .fair--income-bottom {
+      align-items: flex-start !important;
+      width: 100% !important;
+   }
+
    .navigation__line.force--white {
       background-color: hsla(0, 0%, 100%, 0.3);
    }
@@ -4290,6 +4383,10 @@ blockquote {
       flex-direction: column;
       grid-row-gap: 24px;
       border-radius: 20px;
+   }
+
+   .process__illustration.spotlight {
+      display: flex !important;
    }
 
    .container__text.is--footer {
@@ -6215,6 +6312,11 @@ input, textarea, [contenteditable] {
    .container--left, .container--right {
       width: 100%;
    }
+   .container__16.funds {
+      padding-left: 25px;
+      padding-right: 12px;
+      box-sizing: border-box;
+   }
 }
 @media screen and (max-width: 960px) {
    .is--testimonial {
@@ -6247,6 +6349,13 @@ input, textarea, [contenteditable] {
       grid-row-gap: 10px;
       height: 242px;
    }
+   .container__16.spotlight {
+      width: 100% !important;
+   }
+   
+   .process__illustration.spotlight {
+      display: none !important;
+   }
 
    .mt-5 {
       height: 123vh;
@@ -6257,6 +6366,10 @@ input, textarea, [contenteditable] {
    }
    .stage__buttons .button {
       padding: 0.9em 1em;
+  }
+
+  .raise-funds .artist-tag {
+   right: 47px !important;
   }
 }
 
