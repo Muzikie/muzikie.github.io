@@ -1,78 +1,19 @@
 var backDrop = document.getElementById("nav-back");
-backDrop.style.color = "#feeae3";
+var desktopNavigation = document.getElementById("desktop-navigation");
 
-// trigger this function every time the user scrolls
-window.onscroll = function (event) {
-   var scroll = window.pageYOffset;
-   var elem = document.getElementById("el");
-   var glem = document.querySelectorAll(".transition");
-   var aTags = document.getElementsByTagName("a");
-   // console.log(glem[1]);
-   if (scroll < 300) {
-      for (aTag of aTags) {
-         aTag.style.color = "#453248";
-      }
-      // elem.style.transition = "opacity 0.1s linear 0s";
-      // elem.style.opacity = 0.0;
-
-      backDrop.style.color = "#feeae3";
-   } else if (scroll >= 300 && scroll < 600) {
-      elem.style.transition = "opacity 0.5s linear 0s";
-      // elem.style.opacity = 0.0;
-      aTag.style.color = "#453248";
-
-      backDrop.style.color = "#feeae3";
-   } else if (scroll >= 700 && scroll < 2880) {
-      for (aTag of aTags) {
-         aTag.style.color = "rgb(249, 248, 244)";
-      }
-
-      backDrop.style.transition = "color 0.2s linear 0.2s";
-      backDrop.style.color = "#453248";
-   } else if (scroll > 3200) {
-      for (aTag of aTags) {
-         aTag.style.color = "#453248";
-      }
-      // glem[1].style.transition = "opacity 0.4s linear 0.1s";
-      // glem[1].style.opacity = 0.0;
-      // glem[1].style.backgroundColor = "#feeae3";
-
-      backDrop.style.color = "#feeae3";
-   }
+const sectionThemes = {
+   light: {
+      add: "light-backdrop",
+      remove: "dark-backdrop",
+   },
+   dark: {
+      add: "dark-backdrop",
+      remove: "light-backdrop",
+   },
 };
 
-function openChat() {
-   var contactFrom = document.getElementById("contact-lightbox");
-   contactFrom.classList.add("chat");
-   document.getElementById("wf-form-Project-inquiry").classList.add("chat");
-   //contactFrom.className = contactFrom.className === "chat" ? "" : "chat";
-}
-
-function closeFunction() {
-   var contactFrom = document.getElementById("contact-lightbox");
-   contactFrom.classList.remove("chat");
-   document.getElementById("wf-form-Project-inquiry").classList.remove("chat");
-}
-
-function reveal() {
-   var reveals = document.querySelectorAll(".reveal");
-
-   for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-
-      if (elementTop < windowHeight - elementVisible) {
-         reveals[i].classList.add("active");
-      } else {
-         reveals[i].classList.remove("active");
-      }
-   }
-}
-
-window.addEventListener("scroll", reveal);
-
-const observer = new IntersectionObserver((entries) => {
+// define observers
+const slideInObserver = new IntersectionObserver((entries) => {
    entries.forEach((entry) => {
       if (entry.isIntersecting) {
          entry.target.classList.add("show");
@@ -82,31 +23,21 @@ const observer = new IntersectionObserver((entries) => {
    });
 });
 
-const hiddenElements = document.querySelectorAll(".hidden");
-hiddenElements.forEach((el) => observer.observe(el));
-
-// mobile nav
-const nav = document.querySelector(".menu__link-mobile");
-const close = document.querySelector(".menu__link-mobil-close");
-const expanded = document.querySelector(".menu__mobile__expanded");
-const expandedBG = document.querySelector(".is--close-trigger");
-
-nav.addEventListener("click", () => {
-   expanded.style.display = "flex";
+const backdropObserver = new IntersectionObserver((entries) => {
+   entries.forEach((entry) => {
+      const theme = entry.target.className.match(/dark-mode/g) ? 'dark' : 'light';
+      if (entry.isIntersecting) {
+         backDrop.classList.add(sectionThemes[theme].add);
+         desktopNavigation.classList.add(sectionThemes[theme].add);
+         backDrop.classList.remove(sectionThemes[theme].remove);
+         desktopNavigation.classList.remove(sectionThemes[theme].remove);
+      }
+   });
 });
 
-expandedBG.addEventListener("click", () => {
-   expanded.style.display = "none";
-});
+// Register observers
+const hiddenElements = document.querySelectorAll(".slide-in-section");
+hiddenElements.forEach((el) => slideInObserver.observe(el));
 
-close.addEventListener("click", () => {
-   expanded.style.display = "none";
-});
-
-function change() {
-   expanded.style.display = "flex";
-}
-
-function onChange() {
-   expanded.style.display = "none";
-}
+const sectionElements = document.querySelectorAll(".intersection-observed");
+sectionElements.forEach((el) => backdropObserver.observe(el));

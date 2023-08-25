@@ -93,18 +93,6 @@ const accordion = (function () {
    };
 })();
 
-$(document).ready(function () {
+$.when($.ready).then(function () {
    accordion.init(accSettings);
 });
-
-// jQuery(function ($) {
-//    var $navbar = getElementsByTagName("a");
-//    $(window).scroll(function (enevt) {
-//       var $current = $(this).scrollTop();
-//       if ($current > 0) {
-//          $navbar.addClass("navnar-color");
-//       } else {
-//          $navbar.removeClass("navbar-color");
-//       }
-//    });
-// });

@@ -1,4 +1,8 @@
-@forward "globals";
+.js-accordion-body {
+    display: none;
+ }
+
+ @forward "globals";
 
 .filter {
    filter: invert(1);
@@ -6077,18 +6081,6 @@ menu__link.navnar-color {
    margin-top: 0rem;
 }
 
-.reveal {
-   position: relative;
-   transform: translateY(150px);
-   opacity: 0;
-   transition: 1s all ease;
-}
-
-.reveal.active {
-   transform: translateY(0);
-   opacity: 1;
-}
-
 .hidden {
    opacity: 0;
    filter: blur(5px);
@@ -6377,5 +6369,30 @@ input, textarea, [contenteditable] {
    .container__text.is--testimonial {
       grid-row-gap: 18px;
       height: 242px;
+   }
+}
+
+#nav-back {
+   transition: all 0.3s ease-in-out;
+
+   &.dark-backdrop {
+      color: #453248;
+   }
+   
+   &.light-backdrop {
+      color: #feeae3;
+   }
+}
+
+#desktop-navigation {
+   transition: all 0.3s ease-in-out;
+
+   &.dark-backdrop a {
+      color: #feeae3 !important;
+   }
+   
+   &.light-backdrop a {
+      color: #453248 !important;
+      
    }
 }
