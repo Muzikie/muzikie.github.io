@@ -1,0 +1,141 @@
+/// form styling ///
+
+.form {
+   overflow: hidden;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+   -webkit-flex-direction: row;
+   -ms-flex-direction: row;
+   flex-direction: row;
+   -webkit-box-flex: 0;
+   -webkit-flex: 0 auto;
+   -ms-flex: 0 auto;
+   flex: 0 auto;
+   grid-column-gap: 7.75em;
+   grid-row-gap: 1em;
+}
+
+.form-block {
+   position: relative;
+   z-index: 161;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+   margin-bottom: 0px;
+   padding-top: 6em;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -webkit-flex-direction: column;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   -webkit-box-pack: center;
+   -webkit-justify-content: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   grid-row-gap: 2em;
+}
+
+.form__succes-button-wrapper {
+   margin-top: 1em;
+}
+
+.form-block {
+   width: 100%;
+   padding-top: 72px;
+   grid-row-gap: 32px;
+}
+
+.form_input {
+   height: 3em;
+   margin-bottom: 1em;
+   padding: 0em 0.9em;
+   border-style: solid;
+   border-width: 1px;
+   border-color: rgba(0, 0, 0, 0.2);
+   border-radius: 0em;
+   font-size: 1.25em;
+}
+
+.is--paragraph-link {
+   text-decoration-color: rgba(10, 42, 48, 0.2);
+   text-decoration-thickness: 2px;
+   text-underline-offset: 0.1em;
+}
+
+input,
+textarea,
+[contenteditable] {
+   caret-color: #0a2a30;
+}
+
+#mc_embed_signup {
+   form {
+      margin: 0 !important;
+
+      input {
+         border: 0;
+         font-size: 1em;
+      }
+
+      .helper_text,
+      .mce_inline_error {
+         background-color: transparent;
+      }
+   }
+}
+
+/*Only Tablet and higher*/
+@media screen and (min-width: 768px) {
+   .floating-label {
+      pointer-events: none;
+   }
+
+   .custom-input:not(:placeholder-shown) {
+      padding-top: 0.9em;
+   }
+
+   .custom-input:not(:placeholder-shown) + .floating-label {
+      color: #313c3d;
+      transform: scale(0.7);
+      top: 0.3em;
+   }
+
+   .custom-input:not(:focus) + .floating-label {
+      color: #82837b;
+   }
+
+   /*Text-area*/
+   .floating-label-text-area {
+      pointer-events: none;
+   }
+
+   .custom-text-area:not(:placeholder-shown) {
+      padding-top: 1.2em;
+   }
+
+   .custom-text-area:not(:placeholder-shown) + .floating-label-text-area {
+      color: #313c3d;
+      transform: scale(0.7);
+      top: 0.3em;
+   }
+
+   .custom-text-area:not(:focus) + .floating-label-text-area {
+      color: #82837b;
+   }
+}
+
+/*no blue line around focussed state*/
+
+.custom-input:focus {
+   border: none !important;
+   outline: none !important;
+}
+
+.custom-text-area:focus {
+   border: none !important;
+   outline: none !important;
+}
