@@ -1,0 +1,31 @@
+{
+   "name": "muzikie-website",
+   "version": "1.1.0",
+   "description": "The official website of Muzikie",
+   "keywords": [
+      "music",
+      "streaming",
+      "website"
+   ],
+   "scripts": {
+      "build": "rm -rf docs && mkdir docs && grunt",
+      "start": "npx http-server ./docs"
+   },
+   "author": "Block Made GmbH",
+   "license": "ISC",
+   "dependencies": {
+      "grunt-sass": "^3.1.0",
+      "handlebars": "^4.7.7",
+      "jquery": "^3.5.1",
+      "node-sass": "^8.0.0"
+   },
+   "devDependencies": {
+      "grunt": "^1.6.1",
+      "grunt-assemble": "^0.6.3",
+      "grunt-contrib-clean": "^2.0.1",
+      "grunt-contrib-copy": "^1.0.0",
+      "grunt-contrib-cssmin": "^4.0.0",
+      "grunt-contrib-uglify": "^5.2.2",
+      "http-server": "^14.1.1"
+   }
+}
