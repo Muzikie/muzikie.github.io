@@ -1,35 +1,32 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Build without deployment
+name: Build
 
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ["development"]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    branches: [ "development" ]
+  pull_request:
+    branches: [ "development" ]
 
 jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
+
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: build
-        run: npm run build
+    - uses: actions/checkout@v3
+
+    # Read node version from `.nvmrc` file
+    - id: nvmrc
+      uses: browniebroke/read-nvmrc-action@v1
+
+    - uses: actions/setup-node@v3
+      with:
+            # use the output from the action
+            node-version: '${{ steps.nvmrc.outputs.node_version }}'
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build
