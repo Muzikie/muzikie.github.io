@@ -5,14 +5,19 @@ module.exports = function (grunt) {
    grunt.initConfig({
       pkg: grunt.file.readJSON("package.json"),
       clean: {
-         build: ['docs/']
+         build: ['build/']
       },
       copy: {
          main: {
              expand: true,
              cwd: 'src/assets/',
              src: '**',
-             dest: 'docs/assets/'
+             dest: 'build/assets/'
+         },
+         config: {
+            cwd: '.',
+            src: ['robots.txt', 'sitemap.xml'],
+            dest: 'build/'
          }
      },
      assemble: {
@@ -23,7 +28,7 @@ module.exports = function (grunt) {
          },
          pages: {
             src: ['src/pages/*.handlebars'],
-            dest: 'docs/'
+            dest: 'build/'
          }
       },
       uglify: {
@@ -35,8 +40,8 @@ module.exports = function (grunt) {
          },
          build: {
             files: {
-               'docs/js/vendors.min.js': ['./node_modules/jquery/dist/jquery.min.js'],
-               'docs/js/bundle.min.js': ['./src/js/menu.js', './src/js/accordion.js', './src/js/mailChimp.js', './src/js/scroll.js']
+               'build/js/vendors.min.js': ['./node_modules/jquery/dist/jquery.min.js'],
+               'build/js/bundle.min.js': ['./src/js/menu.js', './src/js/accordion.js', './src/js/mailChimp.js', './src/js/scroll.js']
              }
          }
       },
@@ -48,7 +53,7 @@ module.exports = function (grunt) {
          },
          dist: {
             files: {
-               "docs/css/style.css": "./src/scss/style.scss"
+               "build/css/style.css": "./src/scss/style.scss"
             }
          }
       }

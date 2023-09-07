@@ -8,8 +8,8 @@
       "website"
    ],
    "scripts": {
-      "build": "rm -rf docs && mkdir docs && grunt",
-      "start": "npx http-server ./docs"
+      "build": "rm -rf build && mkdir build && grunt",
+      "start": "npx http-server ./build"
    },
    "author": "Block Made GmbH",
    "license": "ISC",
