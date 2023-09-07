@@ -8,8 +8,9 @@
       "website"
    ],
    "scripts": {
-      "build": "rm -rf docs && mkdir docs && grunt",
-      "start": "npx http-server ./docs"
+      "build": "rm -rf build && mkdir build && grunt build",
+      "start": "npx http-server ./build",
+      "dev": "grunt dev"
    },
    "author": "Block Made GmbH",
    "license": "ISC",
@@ -23,9 +24,11 @@
       "grunt": "^1.6.1",
       "grunt-assemble": "^0.6.3",
       "grunt-contrib-clean": "^2.0.1",
+      "grunt-contrib-connect": "^4.0.0",
       "grunt-contrib-copy": "^1.0.0",
       "grunt-contrib-cssmin": "^4.0.0",
       "grunt-contrib-uglify": "^5.2.2",
+      "grunt-contrib-watch": "^1.1.0",
       "http-server": "^14.1.1"
    }
 }
