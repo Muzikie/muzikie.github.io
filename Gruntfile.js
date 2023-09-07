@@ -19,8 +19,8 @@ module.exports = function (grunt) {
             src: ['robots.txt', 'sitemap.xml'],
             dest: 'build/'
          }
-     },
-     assemble: {
+      },
+      assemble: {
          options: {
             layoutdir: 'templates',
             partials: ['src/templates/*.handlebars'],
@@ -45,7 +45,6 @@ module.exports = function (grunt) {
              }
          }
       },
-
       sass: {
          options: {
             implementation: sass,
@@ -56,7 +55,30 @@ module.exports = function (grunt) {
                "build/css/style.css": "./src/scss/style.scss"
             }
          }
-      }
+      },
+      connect: {
+         server: {
+           options: {
+               port: 8080,
+               hostname: '0.0.0.0',
+               base: 'build/',
+           },
+         },
+      },
+      watch: {
+         templates: {
+            files: ['**/*.handlebars'],
+            tasks: ['assemble'],
+         },
+         styles: {
+            files: ['**/*.scss'],
+            tasks: ['sass'],
+         },
+         scripts: {
+            files: ['**/*.js'],
+            tasks: ['uglify'],
+         },
+       },
    });
 
    // Load the plugin that provides the "uglify" task.
@@ -66,7 +88,10 @@ module.exports = function (grunt) {
    grunt.loadNpmTasks('grunt-assemble');
    grunt.loadNpmTasks("grunt-contrib-uglify");
    grunt.loadNpmTasks("grunt-contrib-cssmin");
+   grunt.loadNpmTasks('grunt-contrib-connect');
+   grunt.loadNpmTasks("grunt-contrib-watch");
 
    // Default task(s).
-   grunt.registerTask("default", ['clean', 'assemble', 'copy', 'uglify', 'sass']);
+   grunt.registerTask("build", ['clean', 'assemble', 'copy', 'uglify', 'sass']);
+   grunt.registerTask("dev", ['build', 'connect:server', 'watch']);
 };
