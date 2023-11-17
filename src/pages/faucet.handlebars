@@ -1,0 +1,26 @@
+{{> head title="faucet" }}
+<section class="light-mode">
+    <div class="container is--stage">
+        <div class="container__text">
+            <br/>
+            <br/>
+            <h2>All tokens are for testing purposes only</h2>
+              <p class="text--message is--small">Please enter your address to receive 3000 LSK tokens for free
+                <br>
+                <br>
+              </p>
+              <form id="faucetForm" action="http://localhost:9902/send-faucet" method="POST">
+                <label for="address" class="is--status container__text">Recipient Address:</label>
+                <div>
+                <input type="text" class="progress__status  container__text " id="address" name="address" required>
+                <button type="submit" class="button open-lightbox w-inline-block">Send Faucet</button>
+                </div>
+              </form>
+        </div>
+    </div>
+</section>
+{{> footer}}
+{{> desktopNavigation}}
+{{> mobileNavigation}}
+{{> backToTop}}
+{{> closing}}

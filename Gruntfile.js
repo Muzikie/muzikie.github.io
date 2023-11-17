@@ -41,7 +41,7 @@ module.exports = function (grunt) {
          build: {
             files: {
                'build/js/vendors.min.js': ['./node_modules/jquery/dist/jquery.min.js'],
-               'build/js/bundle.min.js': ['./src/js/menu.js', './src/js/accordion.js', './src/js/mailChimp.js', './src/js/scroll.js']
+               'build/js/bundle.min.js': ['./src/js/menu.js', './src/js/accordion.js', './src/js/mailChimp.js', './src/js/faucet.js', './src/js/scroll.js']
              }
          }
       },
