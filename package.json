@@ -9,10 +9,10 @@
    ],
    "scripts": {
       "build": "rm -rf build && mkdir build && grunt build",
-      "start": "npx http-server ./build",
+      "start": "npx http-server --port=3000 ./build",
       "dev": "grunt dev"
    },
-   "author": "Block Made GmbH",
+   "author": "Reyraa",
    "license": "ISC",
    "dependencies": {
       "grunt-sass": "^3.1.0",
@@ -24,9 +24,9 @@
       "grunt": "^1.6.1",
       "grunt-assemble": "^0.6.3",
       "grunt-contrib-clean": "^2.0.1",
-      "grunt-contrib-connect": "^4.0.0",
+      "grunt-contrib-connect": "^5.0.1",
       "grunt-contrib-copy": "^1.0.0",
-      "grunt-contrib-cssmin": "^4.0.0",
+      "grunt-contrib-cssmin": "^5.0.0",
       "grunt-contrib-uglify": "^5.2.2",
       "grunt-contrib-watch": "^1.1.0",
       "http-server": "^14.1.1"
